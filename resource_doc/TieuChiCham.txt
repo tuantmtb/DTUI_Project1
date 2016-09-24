@@ -1,0 +1,19 @@
+Nộp mã nguồn.
+Vai trò của cá nhân trong nhóm
+Đặc tả yêu cầu chức năng của chương trình, ca sử dụng và luồng chức năng
+Phân tích/ diễn giải lý do thiết kế từng màn hình
+
+* Đánh giá
+Chất lượng của thiết kế
+Tính sử dụng
+Thẩm mỹ
+Sáng tạo
+Số iteration(Số bản nháp)
+
+* Tài liệu
+* Thuyết trình
+
+Tuần 7,8 thuyết trình
+
+Access sibility: Mù màu...
+Mail: baongoc24
