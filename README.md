@@ -8,7 +8,7 @@ Status:
 Submission date:
 
 ## Structure
-
+/resource_doc : Containt document, userstory, wireframe, prototype, ...
 
 ## Technology & Library
 Bootstrap
