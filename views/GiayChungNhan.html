@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+
+
+<html lang="vi">
+
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8"/>
+    <title>dịch vụ hỗ trợ nhận gửi yêu cầu</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+          type="text/css"/>
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet"
+          type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="../assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.css" rel="stylesheet" type="text/css"/>
+    <!-- END PAGE LEVEL PLUGINS -->
+
+
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="../assets/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css"/>
+    <link href="../assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css"/>
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css"
+          id="style_color"/>
+    <link href="../assets/dtui/css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/dtui/css/main.css" rel="stylesheet" type="text/css"/>
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-md">
+<div class="page-wrapper">
+    <!-- BEGIN HEADER -->
+    <div class="page-header navbar navbar-fixed-top">
+        <!-- BEGIN HEADER INNER -->
+        <div class="page-header-inner ">
+            <!-- BEGIN LOGO -->
+            <div class="page-logo">
+                <a href="index.html">
+                    <img src="../assets/layouts/layout/img/logo.png" alt="logo" class="logo-default"/> </a>
+            </div>
+            <!-- END LOGO -->
+            <!-- BEGIN MEGA MENU -->
+            <div class="hor-menu   hidden-sm hidden-xs">
+                <ul class="nav navbar-nav">
+                    <li class="classic-menu-dropdown">
+                        <a href="index.html"> Trang chủ
+                        </a>
+                    </li>
+                    <li class="mega-menu-dropdown active">
+                        <a href="javascript:;" class="dropdown-toggle" data-hover="megamenu-dropdown"
+                           data-close-others="true"> Tạo yêu cầu <span class="selected"> </span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu" style="min-width: 700px;">
+                            <li>
+                                <!-- Content container to add padding -->
+                                <div class="mega-menu-content">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="mega-menu-submenu">
+                                                <li>
+                                                    <h3>Đơn phổ biến</h3>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Giấy chứng nhận</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Cấp bảng điểm</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Cấp lại thẻ sinh viên</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Xem lại bài thi</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Hoãn thi</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="mega-menu-submenu">
+                                                <li>
+                                                    <h3></h3>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Xác nhận đi nước ngoài</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Cấp giấy chứng nhận tốt nghiệp tạm thời</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Nghỉ học có thời hạn</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Tiếp tục học</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Xin thôi học</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="mega-menu-submenu">
+                                                <li>
+                                                    <h3></h3>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Chứng nhận còn nợ môn</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Hoãn nộp học phí</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Mượn hồ sơ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Xác nhận trợ cấp xã hội</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Xác nhận vay vốn ngân hàng</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Xác nhận đơn đề nghị cấp tiền hỗ trợ miễn giảm học
+                                                        phí</a>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="margin-top-10 btn white btn-outline">
+                                                        Xem thêm
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="classic-menu-dropdown">
+                        <a href="index.html"> Đơn đang xử lý
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END MEGA MENU -->
+            <!--BEGIN SEARCH FORM-->
+            <form class="search-form" action="extra_search.html" method="GET">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search..." name="query">
+                    <span class="input-group-btn">
+                                <a href="javascript:;" class="btn submit">
+                                    <i class="icon-magnifier"></i>
+                                </a>
+                            </span>
+                </div>
+            </form>
+            <!--END SEARCH FORM-->
+
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
+               data-target=".navbar-collapse">
+                <span></span>
+            </a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <!-- BEGIN NOTIFICATION DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                           data-close-others="true">
+                            <i class="icon-bell"></i>
+                            <span class="badge badge-default"> 7 </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="external">
+                                <h3>
+                                    <span class="bold">7 thông báo</span></h3>
+                                <a href="page_user_profile_1.html">tất cả</a>
+                            </li>
+                            <li>
+                                <ul class="dropdown-menu-list scroller" style="height: 250px;"
+                                    data-handle-color="#637283">
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="time">hiện tại</span>
+                                            <span class="details">
+                                                        <span class="label label-sm label-icon label-success">
+                                                            <i class="fa fa-plus"></i>
+                                                        </span> Đã tiếp nhận Giấy chứng nhận </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="time">3 phút trước</span>
+                                            <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> Đã xử lý xong Đơn xin bảng điểm </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="time">2 ngày trước</span>
+                                            <span class="details">
+                                                        <span class="label label-sm label-icon label-warning">
+                                                            <i class="fa fa-bell-o"></i>
+                                                        </span> Đã có kết quả phúc khảo môn Toán. </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="time">1 tuần trước</span>
+                                            <span class="details">
+                                                        <span class="label label-sm label-icon label-info">
+                                                            <i class="fa fa-bullhorn"></i>
+                                                        </span> Đã xử lý xong Giấy chứng nhận sinh viên</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END NOTIFICATION DROPDOWN -->
+
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                    <li class="dropdown dropdown-user">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                           data-close-others="true">
+                            <!--<img alt="" class="img-circle" src="../assets/layouts/layout/img/avatar3_small.jpg"/>-->
+                            <span class="username username-hide-on-mobile"> Trần Minh Tuấn </span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li>
+                                <a href="page_user_profile_1.html">
+                                    <i class="icon-user"></i> Thông tin cá nhân </a>
+                            </li>
+                            <li>
+                                <a href="app_calendar.html">
+                                    <i class="icon-calendar"></i> Cấu hình tài khoản </a>
+                            </li>
+                            <li>
+                                <a href="app_inbox.html">
+                                    <i class="icon-envelope-open"></i> Thông báo
+                                    <span class="badge badge-danger"> 3 </span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="page_user_login_1.html">
+                                    <i class="icon-key"></i> Đăng xuất </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+
+
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END HEADER INNER -->
+    </div>
+    <!-- END HEADER -->
+    <!-- BEGIN HEADER & CONTENT DIVIDER -->
+    <div class="clearfix"></div>
+    <!-- END HEADER & CONTENT DIVIDER -->
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        <div class="page-sidebar-wrapper">
+            <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar navbar-collapse collapse">
+                <!-- BEGIN SIDEBAR MENU -->
+                <ul class="page-sidebar-menu  page-header-fixed hidden-sm hidden-xs" data-keep-expanded="false"
+                    data-auto-scroll="true" data-slide-speed="200">
+
+                    <li class="sidebar-search-wrapper">
+                        <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+                        <form class="sidebar-search  sidebar-search-bordered" action="page_general_search_3.html"
+                              method="POST">
+                            <a href="javascript:;" class="remove">
+                                <i class="icon-close"></i>
+                            </a>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                                <span class="input-group-btn">
+                                            <a href="javascript:;" class="btn submit">
+                                                <i class="icon-magnifier"></i>
+                                            </a>
+                                        </span>
+                            </div>
+                        </form>
+                        <!-- END RESPONSIVE QUICK SEARCH FORM -->
+                    </li>
+                    <li class="nav-item start ">
+                        <a href="javascript:;" class="nav-link nav-toggle">
+                            <i class="icon-home"></i>
+                            <span class="title">Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="heading">
+                        <h3 class="uppercase">Danh sách yêu cầu có sẵn</h3>
+                    </li>
+                    <li class="nav-item active open ">
+                        <a href="javascript:;" class="nav-link nav-toggle">
+                            <i class="icon-diamond"></i>
+                            <span class="title">Đơn phổ biến</span>
+                            <span class="arrow open"></span>
+                        </a>
+                        <ul class="sub-menu" style="display: block;">
+
+                            <li class="nav-item active open">
+                                <a href="#" class="nav-link">Giấy chứng nhận</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Cấp bảng điểm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Cấp lại thẻ sinh viên</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Xem lại bài thi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Hoãn thi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="javascript:;" class="nav-link nav-toggle">
+                            <i class="icon-puzzle"></i>
+                            <span class="title">Đơn khác</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Xác nhận đi nước ngoài</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Cấp giấy chứng nhận tốt nghiệp tạm thời</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Nghỉ học có thời hạn</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Tiếp tục học</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Xin thôi học</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Chứng nhận còn nợ môn</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Hoãn nộp học phí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Mượn hồ sơ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Xác nhận trợ cấp xã hội</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Xác nhận vay vốn ngân hàng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Xác nhận đơn đề nghị cấp tiền hỗ trợ miễn giảm
+                                    học
+                                    phí</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="heading">
+                        <h3 class="uppercase">Liên hệ</h3>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="javascript:;" class="nav-link nav-toggle">
+                            <i class="icon-layers"></i>
+                            <span class="title">Gửi yêu cầu khác</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="javascript:;" class="nav-link nav-toggle">
+                            <i class="icon-layers"></i>
+                            <span class="title">Góp ý</span>
+                        </a>
+                    </li>
+                    <li class="heading">
+                        <h3 class="uppercase">Trần Minh Tuấn</h3>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="javascript:;" class="nav-link nav-toggle">
+                            <i class="icon-basket"></i>
+                            <span class="title">Thông báo trạng thái yêu cầu</span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="javascript:;" class="nav-link nav-toggle">
+                            <i class="icon-docs"></i>
+                            <span class="title">Cấu hình tài khoản</span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="javascript:;" class="nav-link nav-toggle">
+                            <i class="icon-user"></i>
+                            <span class="title">Thông tin cá nhân</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="javascript:;" class="nav-link nav-toggle">
+                            <i class="icon-social-dribbble"></i>
+                            <span class="title">Đăng xuất</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- END SIDEBAR MENU -->
+                <!-- END SIDEBAR MENU -->
+                <div class="page-sidebar-wrapper">
+                    <!-- BEGIN RESPONSIVE MENU FOR HORIZONTAL & SIDEBAR MENU -->
+                    <ul class="page-sidebar-menu visible-sm visible-xs  page-header-fixed" data-keep-expanded="false"
+                        data-auto-scroll="true" data-slide-speed="200">
+                        <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+                        <!-- DOC: This is mobile version of the horizontal menu. The desktop version is defined(duplicated) in the header above -->
+                        <li class="sidebar-search-wrapper">
+                            <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+
+                            <form class="sidebar-search sidebar-search-bordered" action="extra_search.html"
+                                  method="POST">
+                                <a href="javascript:;" class="remove">
+                                    <i class="icon-close"></i>
+                                </a>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                                    <span class="input-group-btn">
+                                                <button class="btn submit">
+                                                    <i class="icon-magnifier"></i>
+                                                </button>
+                                            </span>
+                                </div>
+                            </form>
+                            <!-- END RESPONSIVE QUICK SEARCH FORM -->
+                        </li>
+                        <li class="nav-item start active open">
+                            <a href="index.html" class="nav-link nav-toggle"> Trang chủ
+                                <span class="selected"> </span>
+
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-toggle"> Tạo yêu cầu
+                                <span class="arrow"> </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item">
+                                    <a href="javascript:;" class="nav-link nav-toggle"> Đơn phổ biến
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Giấy chứng nhận</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Cấp bảng điểm</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Cấp lại thẻ sinh viên</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Xem lại bài thi</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Hoãn thi</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:;" class="nav-link nav-toggle"> Đơn khác
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Xác nhận đi nước ngoài</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Cấp giấy chứng nhận tốt nghiệp tạm thời</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Nghỉ học có thời hạn</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Tiếp tục học</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Xin thôi học</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Chứng nhận còn nợ môn</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Hoãn nộp học phí</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Mượn hồ sơ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Xác nhận trợ cấp xã hội</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Xác nhận vay vốn ngân hàng</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Xác nhận đơn đề nghị cấp tiền hỗ trợ miễn giảm
+                                                học
+                                                phí</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button type="button"
+                                                    class=" pull-right margin-top-10 margin-bottom-10 margin-right-10 btn white btn-outline">
+                                                Xem thêm
+                                            </button>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <!-- END RESPONSIVE MENU FOR HORIZONTAL & SIDEBAR MENU -->
+                </div>
+            </div>
+            <!-- END SIDEBAR -->
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <div class="page-content">
+                <!-- BEGIN PAGE HEADER-->
+
+                <!-- BEGIN PAGE TITLE-->
+                <!--<h1 class="page-title"> Giấy chứng nhận-->
+                <!--</h1>-->
+                <!-- END PAGE TITLE-->
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <!-- BEGIN VALIDATION STATES-->
+                        <div class="portlet light portlet-fit portlet-form bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class=" icon-layers font-green"></i>
+                                    <span class="caption-subject font-green sbold uppercase">Giấy chứng nhận</span>
+                                </div>
+                                <div class="actions">
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                        <i class="icon-printer"></i>
+                                    </a>
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                        <i class="icon-doc"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <!-- BEGIN FORM-->
+                                <form action="#" class="form-horizontal" id="form_sample_1"
+                                      novalidate="novalidate">
+                                    <div class="form-body">
+                                        <div class="alert alert-danger display-hide">
+                                            <button class="close" data-close="alert"></button>
+                                            Thông tin điền chưa hoàn thành!
+                                        </div>
+                                        <div class="alert alert-success display-hide">
+                                            <button class="close" data-close="alert"></button>
+                                            Yêu cầu đã được gửi đi!
+                                        </div>
+
+                                        <div class="form-group form-md-radios">
+                                            <label class="col-md-3 control-label">Loại giấy chứng nhận</label>
+                                            <div class="col-md-9">
+                                                <div class="md-radio-list">
+                                                    <div class="md-radio">
+                                                        <input type="radio" id="radio1" name="loaigiaychungnhan"
+                                                               value="1"
+                                                               class="md-radiobtn">
+                                                        <label for="radio1">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span> Sinh viên </label>
+                                                    </div>
+                                                    <div class="md-radio">
+                                                        <input type="radio" id="radio2" name="loaigiaychungnhan"
+                                                               value="2"
+                                                               class="md-radiobtn">
+                                                        <label for="radio2">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span> Sinh viên nhiệm vụ chiến lược
+                                                        </label>
+                                                    </div>
+                                                    <div class="md-radio">
+                                                        <input type="radio" id="radio3" name="loaigiaychungnhan"
+                                                               value="2"
+                                                               class="md-radiobtn">
+                                                        <label for="radio3">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span> Học bổng (Điền chi tiết tên học
+                                                            bổng, năm nhận vào ô Lý do bên dưới)
+                                                        </label>
+                                                    </div>
+                                                    <div class="md-radio">
+                                                        <input type="radio" id="radio4" name="loaigiaychungnhan"
+                                                               value="2"
+                                                               class="md-radiobtn">
+                                                        <label for="radio4">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span> Mất thẻ sinh viên (Dùng để tham
+                                                            gia các hoạt động và học tập trong trường)
+                                                        </label>
+                                                    </div>
+                                                    <div class="md-radio">
+                                                        <input type="radio" id="radio5" name="loaigiaychungnhan"
+                                                               value="2"
+                                                               class="md-radiobtn">
+                                                        <label for="radio5">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span> Kê khai thuế thu nhập
+                                                        </label>
+                                                    </div>
+                                                    <div class="md-radio">
+                                                        <input type="radio" id="radio6" name="loaigiaychungnhan"
+                                                               value="2"
+                                                               class="md-radiobtn">
+                                                        <label for="radio6">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span> Hoãn nghĩa vụ quân sự
+                                                        </label>
+                                                    </div>
+                                                    <div class="md-radio">
+                                                        <input type="radio" id="radio7" name="loaigiaychungnhan"
+                                                               value="2"
+                                                               class="md-radiobtn">
+                                                        <label for="radio7">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span> Đăng ký ở ký túc xá
+                                                        </label>
+                                                    </div>
+                                                    <div class="md-radio">
+                                                        <input type="radio" id="radio8" name="loaigiaychungnhan"
+                                                               value="2"
+                                                               class="md-radiobtn">
+                                                        <label for="radio8">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span> Xin Visa
+                                                        </label>
+                                                    </div>
+                                                    <div class="md-radio">
+                                                        <input type="radio" id="radio9" name="loaigiaychungnhan"
+                                                               value="2"
+                                                               class="md-radiobtn">
+                                                        <label for="radio9">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span> Chưa hoàn thành khóa học (Dùng để
+                                                            tham gia các hoạt động và học tập tại trường)
+                                                        </label>
+                                                    </div>
+                                                    <div class="md-radio">
+                                                        <input type="radio" id="radio10" name="loaigiaychungnhan"
+                                                               value="2"
+                                                               class="md-radiobtn">
+                                                        <label for="radio10">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span> Loại khác (Điền chi tiết yêu cầu
+                                                            giấy chưng nhận vào ô Lý do bên dưới)
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Số bản tiếng Việt</label>
+                                            <div class="col-md-4">
+                                                <input id="touchspin_vi" type="text" value="1" name="bantiengviet"
+                                                       class="form-control"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Số bản tiếng Anh</label>
+                                            <div class="col-md-4">
+                                                <input id="touchspin_en" type="text" value="0" name="bantiengviet"
+                                                       class="form-control"></div>
+                                        </div>
+                                        <div class="form-group form-md-line-input">
+                                            <label class="col-md-3 control-label">Lý do</label>
+                                            <div class="col-md-9">
+                                                <textarea class="form-control" name="memo" rows="3"></textarea>
+                                                <div class="form-control-focus"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <div class="row">
+                                            <div class="col-md-offset-3 col-md-9">
+                                                <button type="submit" class="btn green">Gửi đơn</button>
+                                                <button type="reset" class="btn default">Hủy</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- END FORM-->
+                            </div>
+                        </div>
+                        <!-- END VALIDATION STATES-->
+                    </div>
+
+
+                </div>
+                <!-- END CONTENT BODY -->
+            </div>
+            <!-- END CONTENT -->
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+            <div class="page-footer-inner"> 2016 &copy; DTUI
+                <a target="_blank" href="http://student.uet.vnu.edu.vn"> Student UET</a>
+            </div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+    </div>
+    <!-- BEGIN CORE PLUGINS -->
+    <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script src="../assets/global/plugins/fuelux/js/spinner.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+
+    <!-- BEGIN THEME GLOBAL SCRIPTS -->
+    <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+    <!-- END THEME GLOBAL SCRIPTS -->
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="../assets/pages/scripts/components-bootstrap-touchspin.min.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+
+    <!-- BEGIN THEME LAYOUT SCRIPTS -->
+    <script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+    <script src="../assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+    <script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+    <!-- END THEME LAYOUT SCRIPTS -->
+</body>
