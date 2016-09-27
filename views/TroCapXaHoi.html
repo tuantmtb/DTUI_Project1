@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>dịch vụ hỗ trợ nhận gửi yêu cầu</title>
+    <title>Cấp bảng điểm | Dịch vụ hỗ trợ nhận gửi yêu cầu</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta content="" name="description"/>
@@ -24,6 +24,14 @@
 
     <!-- BEGIN PAGE LEVEL PLUGINS -->
     <link href="../assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.css" rel="stylesheet" type="text/css"/>
+
+    <link href="../assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="../assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet"
+          type="text/css"/>
+
+
     <!-- END PAGE LEVEL PLUGINS -->
 
 
@@ -576,7 +584,7 @@
                             <div class="portlet-title">
                                 <div class="caption">
                                     <i class=" icon-layers font-green"></i>
-                                    <span class="caption-subject font-green sbold uppercase">Giấy chứng nhận</span>
+                                    <span class="caption-subject font-green sbold uppercase">Trợ cấp xã hội</span>
                                 </div>
                                 <div class="actions">
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
@@ -591,6 +599,17 @@
                                 <!-- BEGIN FORM-->
                                 <form action="#" class="form-horizontal" id="form_sample_1"
                                       novalidate="novalidate">
+                                    <div class="alert alert-success">
+                                        <div>Sinh viên làm đơn theo mẫu và nộp tại Phòng CTSV (Phòng 104 - E3). Hồ sơ
+                                            được
+                                            giải quyết chậm nhất sau 07 ngày (không kể thứ Bảy, Chủ nhật) kể từ ngày
+                                            nhận hồ
+                                            sơ.
+                                        </div>
+                                        <div>
+                                            <button type="submit" class="btn green">Mẫu đơn</button>
+                                        </div>
+                                    </div>
                                     <div class="form-body">
                                         <div class="alert alert-danger display-hide">
                                             <button class="close" data-close="alert"></button>
@@ -601,132 +620,9 @@
                                             Yêu cầu đã được gửi đi!
                                         </div>
 
-                                        <div class="form-group form-md-radios">
-                                            <label class="col-md-3 control-label">Loại giấy chứng nhận</label>
-                                            <div class="col-md-9">
-                                                <div class="md-radio-list">
-                                                    <div class="md-radio">
-                                                        <input type="radio" id="radio1" name="loaigiaychungnhan"
-                                                               value="1"
-                                                               class="md-radiobtn">
-                                                        <label for="radio1">
-                                                            <span></span>
-                                                            <span class="check"></span>
-                                                            <span class="box"></span> Sinh viên </label>
-                                                    </div>
-                                                    <div class="md-radio">
-                                                        <input type="radio" id="radio2" name="loaigiaychungnhan"
-                                                               value="2"
-                                                               class="md-radiobtn">
-                                                        <label for="radio2">
-                                                            <span></span>
-                                                            <span class="check"></span>
-                                                            <span class="box"></span> Sinh viên nhiệm vụ chiến lược
-                                                        </label>
-                                                    </div>
-                                                    <div class="md-radio">
-                                                        <input type="radio" id="radio3" name="loaigiaychungnhan"
-                                                               value="2"
-                                                               class="md-radiobtn">
-                                                        <label for="radio3">
-                                                            <span></span>
-                                                            <span class="check"></span>
-                                                            <span class="box"></span> Học bổng (Điền chi tiết tên học
-                                                            bổng, năm nhận vào ô Lý do bên dưới)
-                                                        </label>
-                                                    </div>
-                                                    <div class="md-radio">
-                                                        <input type="radio" id="radio4" name="loaigiaychungnhan"
-                                                               value="2"
-                                                               class="md-radiobtn">
-                                                        <label for="radio4">
-                                                            <span></span>
-                                                            <span class="check"></span>
-                                                            <span class="box"></span> Mất thẻ sinh viên (Dùng để tham
-                                                            gia các hoạt động và học tập trong trường)
-                                                        </label>
-                                                    </div>
-                                                    <div class="md-radio">
-                                                        <input type="radio" id="radio5" name="loaigiaychungnhan"
-                                                               value="2"
-                                                               class="md-radiobtn">
-                                                        <label for="radio5">
-                                                            <span></span>
-                                                            <span class="check"></span>
-                                                            <span class="box"></span> Kê khai thuế thu nhập
-                                                        </label>
-                                                    </div>
-                                                    <div class="md-radio">
-                                                        <input type="radio" id="radio6" name="loaigiaychungnhan"
-                                                               value="2"
-                                                               class="md-radiobtn">
-                                                        <label for="radio6">
-                                                            <span></span>
-                                                            <span class="check"></span>
-                                                            <span class="box"></span> Hoãn nghĩa vụ quân sự
-                                                        </label>
-                                                    </div>
-                                                    <div class="md-radio">
-                                                        <input type="radio" id="radio7" name="loaigiaychungnhan"
-                                                               value="2"
-                                                               class="md-radiobtn">
-                                                        <label for="radio7">
-                                                            <span></span>
-                                                            <span class="check"></span>
-                                                            <span class="box"></span> Đăng ký ở ký túc xá
-                                                        </label>
-                                                    </div>
-                                                    <div class="md-radio">
-                                                        <input type="radio" id="radio8" name="loaigiaychungnhan"
-                                                               value="2"
-                                                               class="md-radiobtn">
-                                                        <label for="radio8">
-                                                            <span></span>
-                                                            <span class="check"></span>
-                                                            <span class="box"></span> Xin Visa
-                                                        </label>
-                                                    </div>
-                                                    <div class="md-radio">
-                                                        <input type="radio" id="radio9" name="loaigiaychungnhan"
-                                                               value="2"
-                                                               class="md-radiobtn">
-                                                        <label for="radio9">
-                                                            <span></span>
-                                                            <span class="check"></span>
-                                                            <span class="box"></span> Chưa hoàn thành khóa học (Dùng để
-                                                            tham gia các hoạt động và học tập tại trường)
-                                                        </label>
-                                                    </div>
-                                                    <div class="md-radio">
-                                                        <input type="radio" id="radio10" name="loaigiaychungnhan"
-                                                               value="2"
-                                                               class="md-radiobtn">
-                                                        <label for="radio10">
-                                                            <span></span>
-                                                            <span class="check"></span>
-                                                            <span class="box"></span> Loại khác (Điền chi tiết yêu cầu
-                                                            giấy chưng nhận vào ô Lý do bên dưới)
-                                                        </label>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3">Số bản tiếng Việt</label>
-                                            <div class="col-md-4">
-                                                <input id="touchspin_vi" type="text" value="1" name="bantiengviet"
-                                                       class="form-control"></div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3">Số bản tiếng Anh</label>
-                                            <div class="col-md-4">
-                                                <input id="touchspin_en" type="text" value="0" name="bantiengviet"
-                                                       class="form-control"></div>
-                                        </div>
                                         <div class="form-group form-md-line-input">
                                             <label class="col-md-3 control-label">Lý do</label>
-                                            <div class="col-md-9">ư
+                                            <div class="col-md-9">
                                                 <textarea class="form-control" name="memo" rows="3"></textarea>
                                                 <div class="form-control-focus"></div>
                                             </div>
@@ -777,6 +673,14 @@
     <!-- BEGIN PAGE LEVEL PLUGINS -->
     <script src="../assets/global/plugins/fuelux/js/spinner.min.js" type="text/javascript"></script>
     <script src="../assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/fuelux/js/spinner.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+
+    <script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js"
+            type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
+            type="text/javascript"></script>
     <!-- END PAGE LEVEL PLUGINS -->
 
     <!-- BEGIN THEME GLOBAL SCRIPTS -->
