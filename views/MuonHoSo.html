@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Dịch vụ hỗ trợ nhận gửi yêu cầu</title>
+    <title>Cấp bảng điểm | Dịch vụ hỗ trợ nhận gửi yêu cầu</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta content="" name="description"/>
@@ -24,6 +24,14 @@
 
     <!-- BEGIN PAGE LEVEL PLUGINS -->
     <link href="../assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.css" rel="stylesheet" type="text/css"/>
+
+    <link href="../assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="../assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet"
+          type="text/css"/>
+
+
     <!-- END PAGE LEVEL PLUGINS -->
 
 
@@ -576,7 +584,7 @@
                             <div class="portlet-title">
                                 <div class="caption">
                                     <i class=" icon-layers font-green"></i>
-                                    <span class="caption-subject font-green sbold uppercase">Xem lại bài thi</span>
+                                    <span class="caption-subject font-green sbold uppercase">Mượn hồ sơ</span>
                                 </div>
                                 <div class="actions">
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
@@ -601,31 +609,84 @@
                                             Yêu cầu đã được gửi đi!
                                         </div>
 
-                                        <div class="form-group form-md-line-input">
-                                            <label class="col-md-3 control-label">Học phần xin xem lại</label>
+                                        <div class="form-group form-md-radios">
+                                            <label class="col-md-3 control-label">Loại hồ sơ</label>
                                             <div class="col-md-9">
-                                                <input type="text" class="form-control" placeholder="">
-                                                <div class="form-control-focus"></div>
-                                                <span class="help-block">Tên học phần...</span>
+                                                <div class="row">
+                                                    <div class="md-checkbox-inline">
+                                                        <div class="md-checkbox">
+                                                            <input type="checkbox" id="checkbox1_1" class="md-check">
+                                                            <label for="checkbox1_1">
+                                                                <span></span>
+                                                                <span class="check"></span>
+                                                                <span class="box"></span> Học bạ bản chính </label>
+                                                        </div>
+                                                        <div class="md-checkbox">
+                                                            <input type="checkbox" id="checkbox1_2" class="md-check">
+                                                            <label for="checkbox1_2">
+                                                                <span></span>
+                                                                <span class="check"></span>
+                                                                <span class="box"></span> Bằng tốt nghiệp THPT (bản
+                                                                chính </label>
+                                                        </div>
+                                                        <div class="md-checkbox">
+                                                            <input type="checkbox" id="checkbox1_3" class="md-check">
+                                                            <label for="checkbox1_3">
+                                                                <span class="inc"></span>
+                                                                <span class="check"></span>
+                                                                <span class="box"></span> Giấy triệu tập </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
+                                        <div class="form-group form-md-radios">
+                                            <label class="col-md-3 control-label">Hồ sơ khác</label>
+                                            <div class="col-md-9">
+                                                <textarea class="form-control" name="memo" rows="3"></textarea>
+                                                <div class="form-control-focus"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Thời gian mượn</label>
+                                            <div class="col-md-9">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="input-group input-medium date date-picker"
+                                                             data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
+                                                            <input type="text" class="form-control">
+                                                            <span class="input-group-btn">
+                                                                <button class="btn default" type="button">
+                                                                    <i class="fa fa-calendar"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
 
-                                        <div class="form-group form-md-line-input">
-                                            <label class="control-label col-md-3">Học kỳ</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-group input-medium date date-picker"
+                                                             data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
+                                                            <input type="text" class="form-control">
+                                                            <span class="input-group-btn">
+                                                                <button class="btn default" type="button">
+                                                                    <i class="fa fa-calendar"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Số bản tiếng Anh</label>
                                             <div class="col-md-4">
-                                                <input id="touchspin_hocky" type="text" value="1" name="hocky"
+                                                <input id="touchspin_en" type="text" value="0" name="bantiengviet"
                                                        class="form-control"></div>
                                         </div>
-
-                                        <div class="form-group form-md-line-input">
-                                            <label class="col-md-3 control-label">Năm học</label>
-                                            <div class="col-md-9">
-                                                <input type="text" class="form-control" placeholder="Năm học">
-                                                <div class="form-control-focus"></div>
-                                                <span class="help-block">VD: 2016-2017</span>
-                                            </div>
-                                        </div>
-
                                         <div class="form-group form-md-line-input">
                                             <label class="col-md-3 control-label">Lý do</label>
                                             <div class="col-md-9">
@@ -651,8 +712,6 @@
 
 
                 </div>
-
-
                 <!-- END CONTENT BODY -->
             </div>
             <!-- END CONTENT -->
@@ -681,6 +740,14 @@
     <!-- BEGIN PAGE LEVEL PLUGINS -->
     <script src="../assets/global/plugins/fuelux/js/spinner.min.js" type="text/javascript"></script>
     <script src="../assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/fuelux/js/spinner.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+
+    <script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js"
+            type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
+            type="text/javascript"></script>
     <!-- END PAGE LEVEL PLUGINS -->
 
     <!-- BEGIN THEME GLOBAL SCRIPTS -->
