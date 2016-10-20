@@ -448,12 +448,29 @@
                             <ul class="page-sidebar-menu visible-sm visible-xs  page-header-fixed"
                                 data-keep-expanded="false"
                                 data-auto-scroll="true" data-slide-speed="200">
+                                <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+                                <!-- DOC: This is mobile version of the horizontal menu. The desktop version is defined(duplicated) in the header above -->
+                                <li class="sidebar-search-wrapper">
+                                    <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+
+                                    <form class="sidebar-search sidebar-search-bordered" action="extra_search.html"
+                                          method="POST">
+                                        <a href="javascript:;" class="remove">
+                                            <i class="icon-close"></i>
+                                        </a>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                                            <span class="input-group-btn">
+                                                <button class="btn submit">
+                                                    <i class="icon-magnifier"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                    <!-- END RESPONSIVE QUICK SEARCH FORM -->
+                                </li>
                                 <li class="nav-item start active open">
-                                    <a href="index.html" class="nav-link nav-toggle"> Trang chủ
-                                        <span class="selected"> </span>
-
-                                    </a>
-
+                                    <a href="index.html" class="nav-link nav-toggle"> Trang chủ</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="javascript:;" class="nav-link nav-toggle"> Tạo yêu cầu
@@ -544,7 +561,33 @@
                                         </li>
                                     </ul>
                                 </li>
-
+                                <li class="nav-item">
+                                    <a href="javascript:;" class="nav-link nav-toggle"> Trần Minh Tuấn
+                                        <span class="arrow"> </span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item">
+                                            <a href="UserProfileAccount.html" class="nav-link nav-toggle"> <i
+                                                    class="icon-user"></i> Thông
+                                                tin cá nhân
+                                            </a>
+                                        <li class="nav-item">
+                                            <a href="UserProfileAccount.html" class="nav-link"><i
+                                                    class="icon-calendar"></i> Cấu
+                                                hình tài khoản</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="DonDangXuLy.html" class="nav-link"><i
+                                                    class="icon-envelope-open"></i> Thông
+                                                báo <span
+                                                        class="badge badge-danger"> 3 </span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="index_guest.html">
+                                                <i class="icon-key"></i> Đăng xuất </a>
+                                        </li>
+                                    </ul>
+                                </li>
 
                             </ul>
                             <!-- END RESPONSIVE MENU FOR HORIZONTAL & SIDEBAR MENU -->
