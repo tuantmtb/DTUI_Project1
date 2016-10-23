@@ -1,4 +1,6 @@
-
+h3>a:hover{
+    text-decoration: none;
+}
 .blog-post-content{
     background-color: #fff;
     margin: -15px;
