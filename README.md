@@ -9,6 +9,7 @@ Submission date:
 
 ## Structure
 /resource_doc : Containt document, userstory, wireframe, prototype, ...
+/ document_full:
 
 ## Technology & Library
 Bootstrap
