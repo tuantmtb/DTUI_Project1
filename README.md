@@ -1,6 +1,6 @@
-# DTUI-Project1 Design website responsive
+# DTUI-Project2 Design website responsive
 ## Requirement
-Rebuild and design website : student.uet.vnu.edu.vn
+Calender and reminder
 
 ## Version
 Status:
