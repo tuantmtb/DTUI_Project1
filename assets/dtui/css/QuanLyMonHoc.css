@@ -1,0 +1,143 @@
+.head{
+	background-color: green;
+	color: white;
+	padding-top: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.classes, .journey, .task{
+	background-color: white;
+}
+.journey, .task{
+	margin-top: 10px;
+	padding:10px;
+}
+.control-tap{
+	margin:0px;
+	padding:0px;
+}
+.scroll-back{
+	font-size: 100%;
+	float: left;
+}
+.add-new, .edit{
+	font-size: 100%;
+	float: right;
+	margin-left: 10px;
+}
+.icon-white{
+	color:white;
+}
+.subject{
+	padding-top: 45px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	clear: both;
+}
+.tab1{
+	float: left;
+}
+.tab2{
+	float:right;
+}
+.time{
+	margin-top: 10px;
+	height: auto;
+	margin-left: 10px
+}
+.info{
+	margin-left: 10px
+}
+.icon{
+	color: black;
+	font-size: 25px;
+	margin-top: 5px;
+}
+.icon, .info
+{
+	float: left;
+}
+.class-room{
+	clear: both;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.teacher{
+	clear: both;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 10px
+}
+.number-of-classes1, .number-of-task1{
+	color: blue;
+}
+.number-of-classes2, .number-of-task2{
+	color: green;
+}
+.number-of-classes3, .number-of-task3{
+	color: red;
+}
+.number-of-classes4,  .number-of-task4{
+	color:orange;
+}
+.grade-link, .task-link{
+	text-decoration: none;
+	color:green;
+	font-size: 20px;
+}
+.grade-link:hover{
+	text-decoration: none;
+	color:blue;
+}
+.task-link:hover{
+	text-decoration: none;
+	color:blue;
+}
+.icon-green{
+	color: green;
+	font-size: 20px;
+}
+.journey-info{
+	margin-left: 10px;
+}
+.grade, .task-direc{
+	margin-left: 10px;
+	margin-top: 10px
+}
+.color-picker{
+	background-color: white;
+	margin-top: 10px;
+	height: auto;
+	padding:10px;
+}
+#color-picked{
+	color: green;
+	float: right;
+	font-size: 30px;
+}
+.text-color{
+	float: left;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.list-item:hover{
+	color:red;
+	display: block;
+}
+.task-content{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+#head{
+	margin-left: 10px;
+}
+.pick-color{
+	float: right;
+	width: 30px;
+	margin-right: 15px;
+}
+#position-bottom-right{
+	float: right;
+}
