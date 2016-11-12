@@ -1,0 +1,81 @@
+body{
+	background: white;
+}
+.portlet {
+	background: white;
+	padding: 10px;
+	border: 0px solid black;
+	margin: 0px 0px 0px 0px;
+}
+.portlet.portlet-gray {
+	background: #f7f7f7;
+}
+
+.portlet.portlet-bordered {
+	border: 1px solid #eee;
+}
+
+/* Portlet Title */
+.portlet-title {
+	padding-top:20px;
+  	min-height: 40px;
+  	border-bottom: 1px solid #eee;
+  	margin-bottom: 18px;
+}
+.caption{
+	float:left;
+}
+.actions{
+	float:right;
+}
+.list{
+	margin-top:20px;
+}
+.head{
+	height:auto;
+}
+.setting{
+	padding:15px;
+}
+.setting-title{
+	margin-left: 10px;
+}
+body{
+	background-color: white;
+}
+.set {
+	height: auto;
+	padding-left:15px;
+	padding-right: 10px;
+	border-bottom: 1px solid #ebebe0;
+	color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+}
+.set a{
+	color: black;
+	text-decoration: none;
+}
+.set a:hover{
+	text-decoration: none;
+	color: blue;
+}
+.drop-list a{
+	color:#009973;
+}
+.drop-list{
+	float: right;
+}
+.check-box{
+	float: right;
+}
+.icon{
+	color: black;
+	font-size: 25px;
+	margin-top: 5px;
+	float: left;
+}
+.ul.li.a{
+	text-decoration-line: none;
+}
