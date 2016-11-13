@@ -1,0 +1,75 @@
+.subject-title{
+	background-color: #26c6da;
+	height: auto;
+	padding-top: 20px;
+	padding:10px;
+	color:blue;
+	margin-top:5px;
+	margin-left: 10px;
+	margin-bottom: 0;
+}
+.subject{
+	margin-bottom: 0px;
+	padding:0px;
+}
+#monhoc, #edit{
+	color: white;
+	padding:0;
+}
+.container{
+	padding:0;
+}
+.add-new{
+	padding-right:10px;
+}
+.date-time{
+	margin: 0;
+	padding:0;
+}
+.subject-title i{
+	float: right;
+}
+.collection-item i{
+	float: left;
+	margin:10px;
+}
+.info{
+	padding: 0px;
+}
+.all-task{
+	color: blue;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.all-grade{
+	border-top: red;
+}
+.diemso, .congviec{
+	background-color:  #26c6da;
+	color: white;
+	padding:5px;
+}
+.all-task i{
+	color: #26c6da;
+}
+.grade{
+	border: 0.5px solid lightgrey;
+	margin-top: 10px;
+}
+.number-of-classes1{
+	color: blue;
+}
+.number-of-classes2{
+	color: green;
+}
+.number-of-classes3{
+	color: red;
+}
+.number-of-classes4{
+	color: yellow;
+}
+.journey{
+	margin-top: 10px;
+	color: grey;
+}
