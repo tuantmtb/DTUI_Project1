@@ -1,0 +1,22 @@
+.time-text{
+	margin-top: 0px;
+	padding-top: 0px;
+	bottom: -20px;
+}
+nav .brand-logo{
+	font-size: 0.4em;
+	top: -8px;
+}
+.collection .primary{
+	border-left: 5px solid #00008B;
+}
+.collection .warning{
+	border-left: 5px solid #FFD700;
+}
+.collection .alert{
+	border-left: 5px solid #D2691E;
+}
+.mdi-action-search:before{
+	padding-top: 15px;
+	padding-right : 15px;
+}
