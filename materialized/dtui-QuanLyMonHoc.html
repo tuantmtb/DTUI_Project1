@@ -10,7 +10,7 @@
           content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords"
           content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>Materialize - Material Design Admin Template</title>
+    <title>Quản lý môn học</title>
 
     <!-- Favicons-->
     <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -321,7 +321,63 @@
                     <div class="row">
                         <div class="col s12 m12 l12">
                             <div class="table-grade">
-                                <div class="diemso"><h5>Điểm số</h5>
+                                <div class="diemso"><h5>Điểm số</h5></div>
+                                <div class="btn-floating btn-move-up waves-effect waves-light darken-2 right">
+                                    <a class="modal-trigger" href="#modal1"><i class="mdi-content-create" style="padding-left: 6px;"></i></a>
+                                </div>
+                                <div id="mail-app" class="section">
+                                    <div id="modal1" class="modal">
+                                        <div class="modal-content">
+                                            <nav class="#26c6da">
+                                                <div class="nav-wrapper">
+                                                    <div class="left col s12 m5 l5">
+                                                        <ul>
+                                                            <li><a href="#!" class="email-menu"><i class="modal-action modal-close mdi-hardware-keyboard-backspace"></i></a>
+                                                            </li>
+                                                            <li><a href="#!" style="font-size: large">Nhập điểm</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col s12 m7 l7 hide-on-med-and-down">
+                                                        <ul class="right">
+                                                            <li><a href="#!"><i class="mdi-content-save" ></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                        <div class="model-email-content">
+                                            <div class="row">
+                                                <form class="col s12">
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input placeholder="0-10" id="diem" type="text">
+                                                            <label>Điểm chuyên cần</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input placeholder="0-10" id="diem" type="text">
+                                                            <label>Bài tập lớn 1</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input placeholder="0-10" id="diem" type="text">
+                                                            <label>Bài tập lớn 2</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input placeholder="0-10" id="diem" type="text">
+                                                            <label>Điểm cuối kì</label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="striped-table">
                                     <div class="col s12 m12 l12">
@@ -360,8 +416,8 @@
                                                 </tr>
                                                 <tr></tr>
                                             </tbody>
-                                            
-                                        </table>                                   
+
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -378,8 +434,7 @@
                         <p><b>
                             Tổng số buổi học cả kỳ: <span class="number-of-classes1"><b> 15</b></span></b>
                         </p>
-                        <p>
-                        <b>
+                        <p><b>
                             Số buổi học đã tham gia: <span class="number-of-classes2"><b> 11</b></span>
                         </p>
                         <p><b>
@@ -391,6 +446,7 @@
                     </div>
                 </div>
                 <!--card widgets end-->
+            </div>
             </div>
             <!--end container-->
         </section>
