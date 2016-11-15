@@ -210,10 +210,10 @@
             <div class="container">
 
                 <!--card widgets start-->
-                <div id="card-widgets">
-                    <div class="row">
-                        <div class="col s12 m12 l12 ">
-                            <div class="subject-title task-card">
+                <div class="card-widgets">
+                    <div class="row" id="layout-head">
+                        <div class="col s12 m12 l12 subject-title">
+                            <div class="task-card1">
                                 <div class="subject">
                                     <a href="">
                                     <i class="mdi-image-edit" id="edit"></i>
@@ -230,18 +230,16 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-widgets">
-                    <div class="row">
-                        <div class="col s12 m12 l12 date-time">
+                    <div class="time-table">
+                        <div class="col s12 m12 l12">
                             <ul id="task-card" class="collection date-time">
                                 <li class="collection-item">
-                                <div class="row" id="item">
+                                <div class="row">
                                     <span><i class="mdi-action-schedule"></i></span>
                                     <div class="info">
-                                    <span>Thứ ba: 7h - 10h</span>
-                                    <br>
-                                    <span>20/8/2016 - 15/12/2016</span>
+                                        <span>Thứ ba: 7h - 10h</span>
+                                        <br>
+                                        <span>20/8/2016 - 15/12/2016</span>
                                     </div>
                                 </div>
                                 </li>
@@ -271,45 +269,75 @@
                 </div>
                 <div class="work">
                     <div class="row">
-                        <div class="col s12 m12 l12">
-                            
+                        <div class="col s12 m12 l12"> 
                             <ul id="task-card" class="collection with-header">
                                 <li>
                                     <div class="congviec"><h5 >Công việc</h5></div>
                                 </li>
                                 <li class="collection-item dismissable">
                                     <input type="checkbox" id="task1"/>
-                                    <label for="task1">Thiết kế cơ sở dữ liệu <a href="#"
+                                    <label for="task1">Thiết kế giao diện ứng dụng lịch và nhắc việc cho điện thoại<a href="#"
                                                                                  class="secondary-content"><span
-                                            class="ultra-small">Ngày mai</span></a>
+                                            class="ultra-small">Hôm nay</span></a>
                                     </label>
-                                    <span class="task-cat teal">Cơ sở dữ liệu</span>
+                                    <span class="task-cat teal">Thiết kế giao diện người dùng</span>
                                 </li>
                                 <li class="collection-item dismissable">
                                     <input type="checkbox" id="task2"/>
-                                    <label for="task2">Làm module thống kê <a href="#"
+                                    <label for="task2">Làm slide thuyết trình bài tập lớn 2<a href="#"
                                                                               class="secondary-content"><span
-                                            class="ultra-small">Hôm nay</span></a>
+                                            class="ultra-small">Ngày mai</span></a>
                                     </label>
-                                    <span class="task-cat purple">Phát triển ứng dụng web</span>
+                                    <span class="task-cat teal">Thiết kế giao diện người dùng</span>
                                 </li>
                                 <li class="collection-item dismissable">
                                     <input type="checkbox" id="task3" checked="checked"/>
-                                    <label for="task3">Làm tiểu luận câu 5. <a href="#"
+                                    <label for="task3">Thiết kế giao diện website<a href="#"
                                                                                class="secondary-content"><span
                                             class="ultra-small">Hôm qua</span></a>
                                     </label>
-                                    <span class="task-cat pink">Đường lối ĐCS Việt Nam</span>
-                                </li>
-                                <li class="collection-item dismissable">
-                                    <input type="checkbox" id="task4" checked="checked" disabled="disabled"/>
-                                    <label for="task4">Làm bài số 5 !</label>
-                                    <span class="task-cat cyan">Tín hiệu hệ thống</span>
+                                    <span class="task-cat teal">Thiết kế giao diện người dùng</span>
                                 </li>
                                 <li>
                                     <div class="all-task">
                                         <i class="mdi-image-navigate-next " id="new-page"></i>
                                         <a href="#">Tất cả công việc</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="note">
+                    <div class="row">
+                        <div class="col s12 m12 l12"> 
+                            <ul id="task-card" class="collection with-header">
+                                <li>
+                                    <div class="congviec"><h5 >Ghi chú</h5></div>
+                                </li>
+                                <li class="collection-item dismissable">
+                                    <label for="task1">Báo cáo bài tập lớn số 2: yêu cầu 30 trang, có phụ lục<a href="#"
+                                                                                 class="secondary-content"><span
+                                            class="ultra-small">Ngày mai</span></a>
+                                    </label>
+                                </li>
+                                <li class="collection-item dismissable">
+                                    <label for="task2">Slide thuyết trình: <15 slide, trình bày trong 20 phút <a href="#"
+                                                                              class="secondary-content"><span
+                                            class="ultra-small">Hôm nay</span></a>
+                                    </label>
+                                </li>
+                                <li class="collection-item dismissable">
+                                    <label for="task3">Ứng dụng lịch và nhắc việc có giao diện cho cả mobile và tablet<a href="#"
+                                                                               class="secondary-content"><span
+                                            class="ultra-small">Hôm qua</span></a>
+                                    </label>
+                                </li>
+                                <li>
+                                    <div class="all-task">
+                                        <i class="mdi-image-navigate-next " id="new-page"></i>
+                                        <a href="#">Tất cả ghi chú</a>
                                     </div>
                                 </li>
                             </ul>
@@ -412,7 +440,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td colspan="2">Điểm trung bình</td>
-                                                    <td>8.7</td>
+                                                    <td>8.6</td>
                                                 </tr>
                                                 <tr></tr>
                                             </tbody>

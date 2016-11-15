@@ -1,16 +1,30 @@
 .subject-title{
-	background-color: #26c6da;
+	background: url("../images/QuanLyMonHoc.jpg");
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
 	height: auto;
-	padding-top: 20px;
-	padding:10px;
-	color:blue;
-	margin-top:5px;
-	margin-left: 10px;
-	margin-bottom: 0;
+	padding-top: 35px;
+	color:white;
+	margin-top: 10px;
+}
+.card-widgets{
+	margin-bottom: 10px;
+}
+#layout-head, .time-table
+{
+	margin-right:5px;
+	margin-left: 5px;
 }
 .subject{
 	margin-bottom: 0px;
-	padding:0px;
+	padding:5px;
+}
+.task-card1{
+	margin-right: 10px;
+	margin-left: 10px;
 }
 #monhoc, #edit{
 	color: white;
@@ -23,11 +37,14 @@
 	padding-right:10px;
 }
 .date-time{
-	margin: 0;
-	padding:0;
+	margin: 0px;
+	padding:0px;
 }
 .subject-title i{
 	float: right;
+}
+.collection-item{
+	margin:0px;
 }
 .collection-item i{
 	float: left;
@@ -72,4 +89,8 @@
 .journey{
 	margin-top: 10px;
 	color: grey;
+}
+.note label{
+	font-size: 15px;
+	font-weight: bold;
 }
