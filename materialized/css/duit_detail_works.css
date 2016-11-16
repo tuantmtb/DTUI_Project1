@@ -57,3 +57,9 @@
     padding: 10px 10px; }
   .collection1.with-header .collection-item {
     padding-left: 30px; }
+.card1 {
+  position: relative;
+  overflow: hidden;
+  margin: 0rem 0 0rem 0;
+  background-color: #fff;
+  border-radius: 2px; }
