@@ -29,11 +29,14 @@ body{
 	color: blue;
 }
 .drop-list a{
-	color:#009973;
+	color: #1006c3;
 }
 .drop-list{
 	float: right;
 }
 .check-box{
 	float: right;
+}
+.title-setting{
+	padding-left: 10px;
 }
