@@ -1,0 +1,77 @@
+.mid2{
+    background: white;
+    padding-top: 10px;
+}
+.content-left .avatar{
+    margin-left: 20px;
+    color: gray;
+    margin-top: 18px;
+    font-size: 28px;
+}
+.content-left .avatar2{
+    margin-left: 32px;
+    color: gray;
+    margin-top: 18px;
+    font-size: 28px;
+}
+.date-small{
+    margin-top: -5px;
+}
+#laplai{
+    margin-top: 15px;
+    margin-left: -30px;
+}
+.input-sub .label-floating{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.content-left{
+    margin-left: 0px;
+    padding-left: 10px;
+}
+.title-content{
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.title-content-small{
+    margin-left: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.right-content{
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.right-content-small{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.narBar a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.narBar a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.p,h3,h2,h4,h5,div,a{
+    font-family: Arial;
+}
+.btn-back .material-icons{
+    padding: 10px;
+}
+.title{
+    margin-top: 2px;
+}
+.btn_luu{
+    float: right;
+    margin-top: 4px;
+    padding: 0px;
+}
+.modal-dialog{
+    margin-top: 150px;
+}
+
