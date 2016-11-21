@@ -10,7 +10,7 @@
           content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords"
           content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>Intro</title>
+    <title>Ghi chú</title>
 
     <!-- Favicons-->
     <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -25,6 +25,7 @@
     <!-- CORE CSS-->
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/QuanLyMonHoc.css" type="text/css" rel="stylesheet" media="screen,projection">
 
 
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
@@ -208,49 +209,88 @@
 
             <!--start container-->
             <div class="container">
-                <div class="row">
 
-                <!-- //////////////////////////////////////////////////////////////////////////// -->
-                    <div class="col s12">
-                    <div id="profile-card" class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/user-bg.jpg" alt="user background">
-                        </div>
-                        <div class="card-content">
-                            <img src="images/avatar.jpg" alt=""
-                                 class="circle responsive-img activator card-profile-image">
-                            <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
-                                <i class="mdi-editor-mode-edit"></i>
-                            </a>
+                <!--card widgets start-->
+                <div class="card-widgets">
+                    <div class="row" id="layout-head">
+                        <div class="col s12 m12 l12 subject-title">
+                            <div class="task-card1">
+                                <div class="subject" style="margin-bottom: 100px">
+                                    <h5>THIẾT KẾ GIAO DIỆN NGƯỜI DÙNG</h5>
+                                </div>
+                                <div class="add-new">
+                                    <a href="#modal2" class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right modal-trigger"><i class="mdi-content-add activator"></i>
+                                    </a>
+                                </div>
+                                <div id="mail-app" class="section">
+                                    <div id="modal2" class="modal">
+                                        <div class="modal-content">
+                                            <nav class="#26c6da">
+                                                <div class="nav-wrapper">
+                                                    <div class="left col s12 m5 l5">
+                                                        <ul>
+                                                            <li><a href="#!" class="email-menu"><i
+                                                                    class="modal-action modal-close mdi-hardware-keyboard-backspace"></i></a>
+                                                            </li>
+                                                            <li><a href="#!" style="font-size: large">Tạo ghi chú</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col s12 m7 l7">
+                                                        <ul class="right">
+                                                            <li><a href="#!"><i class="mdi-content-save"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                        <div class="model-email-content">
+                                            <div class="row">
+                                                <form class="col s12">
+                                                    <div class="row">
+                                                        <div class="input-field col s12" id="option-font">
+                                                            <select>
+                                                                <option value="1">Cơ sở dữ liệu</option>
+                                                                <option value="2">Đường lối Cách mạng Việt Nam</option>
+                                                                <option value="3">Phát triển ứng dụng Web</option>
+                                                                <option value="4">Thiết kế giao diện người dùng</option>
+                                                                <option value="5">Tín hiệu hệ thống</option>
+                                                                <option value="6">Xác suất thống kê</option>
+                                                            </select>
+                                                            <label>Chọn môn</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <textarea id="option-font" class="materialize-textarea"></textarea>
+                                                            <label>Ghi chú</label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <span class="card-title activator grey-text text-darken-4">Trần Minh Tuấn</span>
-                            <p><i class="mdi-action-perm-identity cyan-text text-darken-2"></i> Sinh viên
-                            </p>
-                            <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> +84 123 456 789</p>
-                            <p><i class="mdi-communication-email cyan-text text-darken-2"></i> mail@domain.com
-                            </p>
-
-                        </div>
-                        <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Trần Minh Tuấn <i
-                                            class="mdi-navigation-close right"></i></span>
-                            <p>Thông tin</p>
-                            <p><i class="mdi-action-perm-identity cyan-text text-darken-2"></i> Sinh viên
-                            </p>
-                            <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> +84 123 456 789</p>
-                            <p><i class="mdi-communication-email cyan-text text-darken-2"></i> mail@domain.com
-                            </p>
-                            <p><i class="mdi-social-cake cyan-text text-darken-2"></i> 19-5-1996</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- //////////////////////////////////////////////////////////////////////////// -->
-                </div>
+                    <div class="time-table">
+                        <div class="col s12 m12 l12">
+                            <ul id="task-card" class="collection date-time">
+                                <li class="collection-item">
+                                    <div class="row">
+                                        <h6>Báo cáo bài tập lớn số 2: yêu cầu 30 trang, có phụ lục</h6>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
+                </div>
             </div>
-            <!--end container-->
-        </section>
-        <!-- END CONTENT -->
+        </section><!-- END CONTENT -->
 
         <!-- //////////////////////////////////////////////////////////////////////////// -->
         <!-- START RIGHT SIDEBAR NAV-->
