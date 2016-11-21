@@ -212,7 +212,8 @@
                     <li class="collection-header cyan">
                         <h4 class="task-card-title">Ghi chú</h4>
                         <div class="btn-floating btn-move-up waves-effect waves-light darken-2 right">
-                            <a class="modal-trigger" href="#modal1"><i class="mdi-content-add" style="padding-left: 6px;"></i></a>
+                            <a class="modal-trigger" href="#modal1"><i class="mdi-content-add activator"
+                                                                       style="padding-left: 6px;"></i></a>
                         </div>
                         <div id="mail-app" class="section">
                             <div id="modal1" class="modal">
@@ -221,15 +222,16 @@
                                         <div class="nav-wrapper">
                                             <div class="left col s12 m5 l5">
                                                 <ul>
-                                                    <li><a href="#!" class="email-menu"><i class="modal-action modal-close mdi-hardware-keyboard-backspace"></i></a>
+                                                    <li><a href="#!" class="email-menu"><i
+                                                            class="modal-action modal-close mdi-hardware-keyboard-backspace"></i></a>
                                                     </li>
                                                     <li><a href="#!" style="font-size: large">Tạo ghi chú</a>
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="col s12 m7 l7 hide-on-med-and-down">
+                                            <div class="col s12 m7 l7">
                                                 <ul class="right">
-                                                    <li><a href="#!"><i class="mdi-content-save" ></i></a>
+                                                    <li><a href="#!"><i class="mdi-content-save"></i></a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -243,7 +245,8 @@
                                                 <div class="input-field col s12">
                                                     <select>
                                                         <option value="1">Cơ sở dữ liệu</option>
-                                                        <option value="2">Đường lối Cách mạng Việt Nam</option>4
+                                                        <option value="2">Đường lối Cách mạng Việt Nam</option>
+                                                        4
                                                         <option value="3">Phát triển ứng dụng Web</option>
                                                         <option value="4">Thiết kế giao diện người dùng</option>
                                                         <option value="5">Tín hiệu hệ thống</option>
@@ -265,30 +268,92 @@
                         </div>
 
                     </li>
-                    <li class="collection-item primary">
-                        <input type="checkbox" id="task1" />
-                        <label for="task1">Create Mobile App UI. <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
-                        </label>
-                        <span class="task-cat teal">Mobile App</span>
+                    <!--<li class="collection-item primary">-->
+                        <!--<input type="checkbox" id="task1"/>-->
+                        <!--<label for="task1">Thuyết trình <a href="#"-->
+                                                                                                      <!--class="secondary-content"><span-->
+                                <!--class="ultra-small">Hôm nay</span></a>-->
+                        <!--</label>-->
+                        <!--<span class="task-cat teal">Thiết kế giao diện người dùng</span>-->
+                    <!--</li>-->
+                    <!--<li class="collection-item primary">-->
+                        <!--<input type="checkbox" id="task1"/>-->
+                        <!--<label for="task1"> Nộp báo cáo bài tập lớn <a href="#"-->
+                                                                              <!--class="secondary-content"><span-->
+                                <!--class="ultra-small">Hôm nay</span></a>-->
+                        <!--</label>-->
+                        <!--<span class="task-cat purple">Phát triển ứng dụng web</span>-->
+                    <!--</li>-->
+                    <!--<li class="collection-item dismissable">-->
+                        <!--<input type="checkbox" id="task2"/>-->
+                        <!--<label for="task2">Báo cáo bài tập lớn số 2<a href="#" class="secondary-content"><span-->
+                                <!--class="ultra-small">Ngày mai</span></a>-->
+                        <!--</label>-->
+                        <!--<span class="task-cat teal">Thiết kế giao diện người dùng</span>-->
+                    <!--</li>-->
+                    <!--<li class="collection-item dismissable">-->
+                        <!--<input type="checkbox" id="task3" checked="checked"/>-->
+                        <!--<label for="task3">Check the new Mockup of ABC. <a href="#" class="secondary-content"><span-->
+                                <!--class="ultra-small">Wednesday</span></a>-->
+                        <!--</label>-->
+                        <!--<span class="task-cat pink">Mockup</span>-->
+                    <!--</li>-->
+                    <!--<li class="collection-item dismissable">-->
+                        <!--<input type="checkbox" id="task4" checked="checked" disabled="disabled"/>-->
+                        <!--<label for="task4">I did it !</label>-->
+                        <!--<span class="task-cat cyan">Mobile App</span>-->
+                    <!--</li>-->
+                    <li id="work-collections" class="seaction">
+                        <div class="row">
+                            <div class="col s12">
+                                <ul id="projects-collection" class="collection">
+                                    <li class="collection-item">
+                                        <div class="row">
+                                            <div class="col s6 m8 l9">
+                                                <a href="#" class="collections-title" style="color: black;">Báo cáo bài tập lớn số 2: yêu cầu 30 trang, có phụ lục</a>
+                                            </div>
+                                            <div class="col s3">
+                                                <span class="task-cat teal">Thiết kế giao diện người dùng</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="collection-item">
+                                        <div class="row">
+                                            <div class="col s6 m8 l9">
+                                                <a href="#" class="collections-title" style="color: black;">Trình bày sản phẩm vào cuối kì</a>
+                                            </div>
+                                            <div class="col s3">
+                                                <span class="task-cat purple">Thiết kế giao diện người dùng</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="collection-item">
+                                        <div class="row">
+                                            <div class="col s6 m8 l9">
+                                                <a href="#" class="collections-title" style="color: black;">Slide không được quá màu mè, nhiều hiệu ứng</a>
+                                            </div>
+                                            <div class="col s3">
+                                                <span class="task-cat pink">Đường lối ĐCS Việt Nam</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="collection-item">
+                                        <div class="row">
+                                            <div class="col s6 m8 l9">
+                                                <a href="#" class="collections-title" style="color: black;">Slide thuyết trình: <15 slide, trình bày trong 20 phút </a>
+                                            </div>
+                                            <div class="col s3">
+                                                <span class="task-cat teal">Thiết kế giao diện người dùng</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
-                    <li class="collection-item dismissable">
-                        <input type="checkbox" id="task2" />
-                        <label for="task2">Check the new API standerds. <a href="#" class="secondary-content"><span class="ultra-small">Monday</span></a>
-                        </label>
-                        <span class="task-cat purple">Web API</span>
-                    </li>
-                    <li class="collection-item dismissable">
-                        <input type="checkbox" id="task3" checked="checked" />
-                        <label for="task3">Check the new Mockup of ABC. <a href="#" class="secondary-content"><span class="ultra-small">Wednesday</span></a>
-                        </label>
-                        <span class="task-cat pink">Mockup</span>
-                    </li>
-                    <li class="collection-item dismissable">
-                        <input type="checkbox" id="task4" checked="checked" disabled="disabled" />
-                        <label for="task4">I did it !</label>
-                        <span class="task-cat cyan">Mobile App</span>
-                    </li>
+
                 </ul>
+
             </div>
 
 
