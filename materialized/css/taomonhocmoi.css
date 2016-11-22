@@ -1,7 +1,4 @@
-.mdi-content-clear:before{
-	padding-top: 15px;
-	padding-left: 15px;
-}
+
 .right >a {
 	font-size: 20px;
 	padding-bottom: 20px;
@@ -29,3 +26,25 @@
 .year{
 	padding: 10px;
 }
+@media only screen and (min-width: 0px) {
+  .hide-on-med-and-up {
+    display: none !important; }
+  .mdi-hardware-keyboard-backspace:before{
+	padding-top: 10px;
+  }
+  .mdi-content-clear:before{
+	padding-top: 15px;
+	padding-left: 15px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .hide-on-med-and-up {
+    display: none !important; }
+.mdi-hardware-keyboard-backspace:before{
+	padding-top: 0px;
+  }
+  .mdi-content-clear:before{
+	padding-top: 0px;
+	padding-left: 0px;
+  }
+ }

@@ -16,7 +16,23 @@ nav .brand-logo{
 .collection .alert{
 	border-left: 5px solid #D2691E;
 }
+
+
+@media only screen and (min-width: 0px) {
+  .hide-on-med-and-up {
+    display: none !important; }
 .mdi-action-search:before{
 	padding-top: 15px;
 	padding-right : 15px;
 }
+
+}
+@media only screen and (min-width: 601px) {
+  .hide-on-med-and-up {
+    display: none !important; }
+.mdi-action-search:before{
+	padding-top: 0px;
+	padding-right : 0px;
+}
+
+ }
