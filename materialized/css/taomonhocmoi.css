@@ -30,21 +30,28 @@
   .hide-on-med-and-up {
     display: none !important; }
   .mdi-hardware-keyboard-backspace:before{
-	padding-top: 10px;
+	padding-top: 15px;
   }
   .mdi-content-clear:before{
 	padding-top: 15px;
 	padding-left: 15px;
   }
+  .mdi-content-save:before{
+	  padding-top:15px;
+  }
 }
+
 @media only screen and (min-width: 601px) {
   .hide-on-med-and-up {
     display: none !important; }
 .mdi-hardware-keyboard-backspace:before{
-	padding-top: 0px;
+	padding-top: 0;
   }
   .mdi-content-clear:before{
-	padding-top: 0px;
-	padding-left: 0px;
+	padding-top: 0;
+	padding-left: 0;
+  }
+  .mdi-content-save:before{
+	  padding-top:0;
   }
  }
