@@ -10,7 +10,7 @@
           content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords"
           content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>Ghi chú</title>
+    <title>Studer</title>
 
     <!-- Favicons-->
     <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -25,7 +25,6 @@
     <!-- CORE CSS-->
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="css/QuanLyMonHoc.css" type="text/css" rel="stylesheet" media="screen,projection">
 
 
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
@@ -54,29 +53,9 @@
     <div class="navbar-fixed">
         <nav class="cyan">
             <div class="nav-wrapper">
-                <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1">Studer</a> <span
+                <h1 class="logo-wrapper center"><a href="index.html" class="brand-logo darken-1">Studer</a> <span
                         class="logo-text">Studer</span>
                 </h1>
-                <ul class="right hide-on-med-and-down">
-                    <li class="search-out">
-                        <input type="text" class="search-out-text">
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="waves-effect waves-block waves-light show-search"><i
-                                class="mdi-action-search"></i></a>
-                    </li>
-                    <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i
-                            class="mdi-action-settings-overscan"></i></a>
-                    </li>
-                    <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i
-                            class="mdi-social-notifications"></i></a>
-                    </li>
-                    <!-- Dropdown Trigger -->
-                    <li><a href="#" data-activates="chat-out"
-                           class="waves-effect waves-block waves-light chat-collapse"><i
-                            class="mdi-communication-chat"></i></a>
-                    </li>
-                </ul>
             </div>
         </nav>
     </div>
@@ -198,87 +177,321 @@
             <!--start container-->
             <div class="container">
 
-                <!--card widgets start-->
-                <div class="card-widgets">
-                    <div class="row" id="layout-head">
-                        <div class="col s12 m12 l12 subject-title">
-                            <div class="task-card1">
-                                <div class="subject" style="margin-bottom: 100px">
-                                    <h5>THIẾT KẾ GIAO DIỆN NGƯỜI DÙNG</h5>
-                                </div>
-                                <div class="add-new">
-                                    <a href="#modal2" class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right modal-trigger"><i class="mdi-content-add activator"></i>
-                                    </a>
-                                </div>
-                                <div id="mail-app" class="section">
-                                    <div id="modal2" class="modal">
-                                        <div class="modal-content">
-                                            <nav class="#26c6da">
-                                                <div class="nav-wrapper">
-                                                    <div class="left col s12 m5 l5">
-                                                        <ul>
-                                                            <li><a href="#!" class="email-menu"><i
-                                                                    class="modal-action modal-close mdi-hardware-keyboard-backspace"></i></a>
-                                                            </li>
-                                                            <li><a href="#!" style="font-size: large">Tạo ghi chú</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col s12 m7 l7">
-                                                        <ul class="right">
-                                                            <li><a href="#!"><i class="mdi-content-save"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </nav>
-                                        </div>
-                                        <div class="model-email-content">
-                                            <div class="row">
-                                                <form class="col s12">
-                                                    <div class="row">
-                                                        <div class="input-field col s12" id="option-font">
-                                                            <select>
-                                                                <option value="1">Cơ sở dữ liệu</option>
-                                                                <option value="2">Đường lối Cách mạng Việt Nam</option>
-                                                                <option value="3">Phát triển ứng dụng Web</option>
-                                                                <option value="4">Thiết kế giao diện người dùng</option>
-                                                                <option value="5">Tín hiệu hệ thống</option>
-                                                                <option value="6">Xác suất thống kê</option>
-                                                            </select>
-                                                            <label>Chọn môn</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="input-field col s12">
-                                                            <textarea id="option-font" class="materialize-textarea"></textarea>
-                                                            <label>Ghi chú</label>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                <!--chart dashboard start-->
+                <div id="chart-dashboard">
+                    <div class="row">
+                        <div class="col s12 m12 l8">
+                            <div class="card">
+                                <div class="card-move-up waves-effect waves-block waves-light">
+                                    <div class="move-up cyan darken-1">
+                                        <div>
+                                            <span class="chart-title white-text">Thống kê</span>
+                                            <div class="chart-revenue cyan darken-2 white-text">
+                                                <p class="chart-revenue-total">7/13 tasks</p>
                                             </div>
+                                            <div class="switch chart-revenue-switch right">
+                                                <label class="cyan-text text-lighten-5">
+                                                    Tuần
+                                                    <input type="checkbox">
+                                                    <span class="lever"></span> Ngày
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="trending-line-chart-wrapper">
+                                            <canvas id="trending-line-chart" height="70"></canvas>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="card-content">
+                                    <a class="btn-floating btn-move-up waves-effect waves-light darken-2 right"><i
+                                            class="mdi-av-equalizer activator"></i></a>
+                                    <div class="col s12 m3 l3">
+                                        <div id="doughnut-chart-wrapper">
+                                            <canvas id="doughnut-chart" height="200"></canvas>
+                                            <!--<div class="doughnut-chart-status">13-->
+                                            <!--<p class="ultra-small center-align">Task</p>-->
+                                            <!--</div>-->
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m2 l2">
+                                        <ul class="doughnut-chart-legend">
+                                            <li class="mobile ultra-small"><span class="legend-color"></span>Cơ sở dữ
+                                                liệu
+                                            </li>
+                                            <li class="kitchen ultra-small"><span class="legend-color"></span> Xác suất
+                                                thống kê
+                                            </li>
+                                            <li class="home ultra-small"><span class="legend-color"></span> Khác</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col s12 m5 l6">
+                                        <div class="trending-bar-chart-wrapper">
+                                            <canvas id="trending-bar-chart" height="90"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Công việc <i
+                                            class="mdi-navigation-close right"></i></span>
+                                    <table class="responsive-table">
+                                        <thead>
+                                        <tr>
+                                            <th data-field="id">ID</th>
+                                            <th data-field="month">Month</th>
+                                            <th data-field="item-sold">Item Sold</th>
+                                            <th data-field="item-price">Item Price</th>
+                                            <th data-field="total-profit">Total Profit</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>January</td>
+                                            <td>122</td>
+                                            <td>100</td>
+                                            <td>$122,00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>February</td>
+                                            <td>122</td>
+                                            <td>100</td>
+                                            <td>$122,00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>March</td>
+                                            <td>122</td>
+                                            <td>100</td>
+                                            <td>$122,00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>April</td>
+                                            <td>122</td>
+                                            <td>100</td>
+                                            <td>$122,00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>May</td>
+                                            <td>122</td>
+                                            <td>100</td>
+                                            <td>$122,00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>June</td>
+                                            <td>122</td>
+                                            <td>100</td>
+                                            <td>$122,00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>July</td>
+                                            <td>122</td>
+                                            <td>100</td>
+                                            <td>$122,00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>August</td>
+                                            <td>122</td>
+                                            <td>100</td>
+                                            <td>$122,00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Septmber</td>
+                                            <td>122</td>
+                                            <td>100</td>
+                                            <td>$122,00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Octomber</td>
+                                            <td>122</td>
+                                            <td>100</td>
+                                            <td>$122,00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>November</td>
+                                            <td>122</td>
+                                            <td>100</td>
+                                            <td>$122,00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>December</td>
+                                            <td>122</td>
+                                            <td>100</td>
+                                            <td>$122,00.00</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
 
                             </div>
                         </div>
-                    </div>
-                    <div class="time-table">
-                        <div class="col s12 m12 l12">
-                            <ul id="task-card" class="collection date-time">
-                                <li class="collection-item">
-                                    <div class="row">
-                                        <h6>Báo cáo bài tập lớn số 2: yêu cầu 30 trang, có phụ lục</h6>
+
+                        <div class="col s12 m12 l4">
+                            <div class="card">
+                                <div class="card-move-up teal waves-effect waves-block waves-light">
+                                    <div class="move-up">
+                                        <!--<p class="margin white-text">Browser Stats</p>-->
+                                        <!--<canvas id="trending-radar-chart" height="114"></canvas>-->
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                                <div class="card-content  teal darken-2">
+                                    <a class="btn-floating btn-move-up waves-effect waves-light darken-2 right"><i
+                                            class="mdi-av-equalizer activator"></i></a>
+                                    <div class="line-chart-wrapper">
+                                        <p class="margin white-text">Công việc hoàn thành</p>
+                                        <canvas id="line-chart" height="114"></canvas>
+                                    </div>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Công việc hoàn thành <i
+                                            class="mdi-navigation-close right"></i></span>
+                                    <table class="responsive-table">
+                                        <thead>
+                                        <tr>
+                                            <th data-field="country-name">Country Name</th>
+                                            <th data-field="item-sold">Item Sold</th>
+                                            <th data-field="total-profit">Total Profit</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>USA</td>
+                                            <td>65</td>
+                                            <td>$452.55</td>
+                                        </tr>
+                                        <tr>
+                                            <td>UK</td>
+                                            <td>76</td>
+                                            <td>$452.55</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Canada</td>
+                                            <td>65</td>
+                                            <td>$452.55</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brazil</td>
+                                            <td>76</td>
+                                            <td>$452.55</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>India</td>
+                                            <td>65</td>
+                                            <td>$452.55</td>
+                                        </tr>
+                                        <tr>
+                                            <td>France</td>
+                                            <td>76</td>
+                                            <td>$452.55</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Austrelia</td>
+                                            <td>65</td>
+                                            <td>$452.55</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Russia</td>
+                                            <td>76</td>
+                                            <td>$452.55</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
+                <!--chart dashboard end-->
+
+                <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+                <!--card stats start-->
+                <div id="card-stats">
+                    <div class="row">
+                        <div class="col s12 m6 l3">
+                            <div class="card">
+                                <div class="card-content  green white-text">
+                                    <p class="card-stats-title"><i class="mdi-social-group-add"></i> Công việc</p>
+                                    <h4 class="card-stats-number">23</h4>
+                                    <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 75%
+                                        <span class="green-text text-lighten-5">đã hoàn thành</span>
+                                    </p>
+                                </div>
+                                <div class="card-action  green darken-2">
+                                    <div id="clients-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l3">
+                            <div class="card">
+                                <div class="card-content purple white-text">
+                                    <p class="card-stats-title"><i class="mdi-editor-attach-money"></i>Điểm trung bình
+                                    </p>
+                                    <h4 class="card-stats-number">3.69</h4>
+                                    <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> tăng
+                                        70%
+                                        <span class="purple-text text-lighten-5">so với kì trước</span>
+                                    </p>
+                                </div>
+                                <div class="card-action purple darken-2">
+                                    <div id="sales-compositebar"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l3">
+                            <div class="card">
+                                <div class="card-content blue-grey white-text">
+                                    <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Lời nhắc</p>
+                                    <h4 class="card-stats-number">7</h4>
+                                    <!--<p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 80%-->
+                                    <!--<span class="blue-grey-text text-lighten-5">from yesterday</span>-->
+                                    <!--</p>-->
+                                </div>
+                                <div class="card-action blue-grey darken-2">
+                                    <!--<div id="profit-tristate"></div>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l3">
+                            <div class="card">
+                                <div class="card-content deep-purple white-text">
+                                    <p class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i> Ghi chú
+                                    </p>
+                                    <h4 class="card-stats-number">24</h4>
+                                    <p class="card-stats-compare">
+                                        <!--<i class="mdi-hardware-keyboard-arrow-down"></i> 3%-->
+                                        <!--<span class="deep-purple-text text-lighten-5">from last month</span>-->
+                                    </p>
+                                </div>
+                                <div class="card-action  deep-purple darken-2">
+                                    <!--<div id="invoice-line"></div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--card stats end-->
+
+                <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
             </div>
-        </section><!-- END CONTENT -->
+            <!--end container-->
+        </section>
+        <!-- END CONTENT -->
 
         <!-- //////////////////////////////////////////////////////////////////////////// -->
         <!-- START RIGHT SIDEBAR NAV-->

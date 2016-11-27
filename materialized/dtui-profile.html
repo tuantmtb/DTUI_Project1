@@ -17,7 +17,7 @@
           content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords"
           content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>Calendar | Materialize - Material Design Admin Template</title>
+    <title>Page Blank | Materialize - Material Design Admin Template</title>
 
     <!-- Favicons-->
     <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -37,11 +37,9 @@
 
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
     <link href="css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet"
           media="screen,projection">
-    <link href="js/plugins/fullcalendar/css/fullcalendar.min.css" type="text/css" rel="stylesheet"
-          media="screen,projection">
+    <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 </head>
 
 <body>
@@ -61,9 +59,29 @@
     <div class="navbar-fixed">
         <nav class="cyan">
             <div class="nav-wrapper">
-                <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1">Lịch</a> <span
-                        class="logo-text">Lịch</span>
+                <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img
+                        src="images/materialize-logo.png" alt="materialize logo"></a> <span class="logo-text">Materialize</span>
                 </h1>
+                <ul class="right hide-on-med-and-down">
+                    <li class="search-out">
+                        <input type="text" class="search-out-text">
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="waves-effect waves-block waves-light show-search"><i
+                                class="mdi-action-search"></i></a>
+                    </li>
+                    <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i
+                            class="mdi-action-settings-overscan"></i></a>
+                    </li>
+                    <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i
+                            class="mdi-social-notifications"></i></a>
+                    </li>
+                    <!-- Dropdown Trigger -->
+                    <li><a href="#" data-activates="chat-out"
+                           class="waves-effect waves-block waves-light chat-collapse"><i
+                            class="mdi-communication-chat"></i></a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </div>
@@ -182,41 +200,44 @@
         <!-- START CONTENT -->
         <section id="content">
 
-            <!--breadcrumbs start-->
-            <!--<div id="breadcrumbs-wrapper" class=" grey lighten-3">-->
-            <!--<div class="container">-->
-            <!--<div class="row">-->
-            <!--<div class="col s12 m12 l12">-->
-            <!--<h5 class="breadcrumbs-title">Calendar</h5>-->
-            <!--<ol class="breadcrumb">-->
-            <!--<li><a href="index.html">Dashboard</a></li>-->
-            <!--<li><a href="#">Pages</a></li>-->
-            <!--<li class="active">Calendar</li>-->
-            <!--</ol>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--breadcrumbs end-->
-
-
             <!--start container-->
             <div class="container">
-                <div class="section">
-                    <div id="full-calendar">
-                        <div class="row">
-                            <div class="col s12 m12 l12">
-                                <div id='calendar'></div>
-                            </div>
-                        </div>
+                <div id="profile-card" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/user-bg.jpg" alt="user bg">
                     </div>
+                    <div class="card-content">
+                        <img src="images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
+                        <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
+                            <i class="mdi-editor-mode-edit"></i>
+                        </a>
+
+                        <span class="card-title activator grey-text text-darken-4">Trần Minh Tuấn</span>
+                        <p><i class="mdi-action-perm-identity"></i> Developer</p>
+                        <p><i class="mdi-action-perm-phone-msg"></i> K59CLC - UET - VNU</p>
+                        <p><i class="mdi-communication-email"></i> tuantmtb@gmail.com</p>
+
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Roger Waters <i
+                                class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this card.</p>
+                        <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
+                        <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
+                        <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
+                        <p><i class="mdi-social-cake"></i> 18th June 1990
+                        </p>
+                        <p>
+                        </p>
+                        <p><i class="mdi-device-airplanemode-on"></i> BAR - AUS
+                        </p>
+                        <p>
+                        </p></div>
                 </div>
             </div>
             <!--end container-->
-
         </section>
         <!-- END CONTENT -->
-
 
     </div>
     <!-- END WRAPPER -->
@@ -239,19 +260,11 @@ Scripts
 <script type="text/javascript" src="js/prism.js"></script>
 <!--scrollbar-->
 <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-
 <!-- chartist -->
 <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>
 
-<!-- Calendar Script -->
-<script type="text/javascript" src="js/plugins/fullcalendar/lib/jquery-ui.custom.min.js"></script>
-<script type="text/javascript" src="js/plugins/fullcalendar/lib/moment.min.js"></script>
-<script type="text/javascript" src="js/plugins/fullcalendar/js/fullcalendar.min.js"></script>
-<script type="text/javascript" src="js/plugins/fullcalendar/fullcalendar-script.js"></script>
-
 <!--plugins.js - Some Specific JS codes for Plugin Settings-->
 <script type="text/javascript" src="js/plugins.js"></script>
-
 
 </body>
 

@@ -10,7 +10,7 @@
           content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords"
           content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>Ghi chú</title>
+    <title>Quản lý môn học</title>
 
     <!-- Favicons-->
     <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -26,7 +26,6 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/QuanLyMonHoc.css" type="text/css" rel="stylesheet" media="screen,projection">
-
 
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
     <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet"
@@ -203,30 +202,161 @@
                     <div class="row" id="layout-head">
                         <div class="col s12 m12 l12 subject-title">
                             <div class="task-card1">
-                                <div class="subject" style="margin-bottom: 100px">
+                                <div class="subject">
+                                    <a href="">
+                                    <i class="mdi-image-edit" id="edit"></i>
+                                    </a>
+                                    <h5 id="monhoc">DTUI</h5>
                                     <h5>THIẾT KẾ GIAO DIỆN NGƯỜI DÙNG</h5>
+                                    
                                 </div>
                                 <div class="add-new">
-                                    <a href="#modal2" class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right modal-trigger"><i class="mdi-content-add activator"></i>
-                                    </a>
+                                <a href="" class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
+                                    <i class="mdi-content-add activator"></i>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time-table">
+                        <div class="col s12 m12 l12">
+                            <ul id="task-card" class="collection date-time">
+                                <li class="collection-item">
+                                <div class="row">
+                                    <span><i class="mdi-action-schedule"></i></span>
+                                    <div class="info">
+                                        <span>Thứ ba: 7h - 10h</span>
+                                        <br>
+                                        <span>20/8/2016 - 15/12/2016</span>
+                                    </div>
+                                </div>
+                                </li>
+                                <li class="collection-item">
+                                    <div class="row">
+                                    <i class="mdi-communication-location-on"></i>
+                                    <div class="info">
+                                        <span>Phòng 107</span>
+                                        <br>
+                                        <span>Dãy nhà G2</span>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li class="collection-item">
+                                <div class="row">
+                                    <i class="mdi-image-timer-auto"></i>
+                                    <div class="info">
+                                    <span>Giảng viên: Phạm Ngọc Hùng</span>
+                                    <br>
+                                    <span>Email: hungpn@vnu.edu.vn</span>
+                                    </div>
+                                </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="row">
+                        <div class="col s12 m12 l12"> 
+                            <ul id="task-card" class="collection with-header">
+                                <li>
+                                    <div class="congviec"><h5 >Công việc</h5></div>
+                                </li>
+                                <li class="collection-item dismissable">
+                                    <input type="checkbox" id="task1"/>
+                                    <label for="task1">Thiết kế giao diện ứng dụng lịch và nhắc việc cho điện thoại<a href="#"
+                                                                                 class="secondary-content"><span
+                                            class="ultra-small">Hôm nay</span></a>
+                                    </label>
+                                    <span class="task-cat teal">Thiết kế giao diện người dùng</span>
+                                </li>
+                                <li class="collection-item dismissable">
+                                    <input type="checkbox" id="task2"/>
+                                    <label for="task2">Làm slide thuyết trình bài tập lớn 2<a href="#"
+                                                                              class="secondary-content"><span
+                                            class="ultra-small">Ngày mai</span></a>
+                                    </label>
+                                    <span class="task-cat teal">Thiết kế giao diện người dùng</span>
+                                </li>
+                                <li class="collection-item dismissable">
+                                    <input type="checkbox" id="task3" checked="checked"/>
+                                    <label for="task3">Thiết kế giao diện website<a href="#"
+                                                                               class="secondary-content"><span
+                                            class="ultra-small">Hôm qua</span></a>
+                                    </label>
+                                    <span class="task-cat teal">Thiết kế giao diện người dùng</span>
+                                </li>
+                                <li>
+                                    <div class="all-task">
+                                        <i class="mdi-image-navigate-next " id="new-page"></i>
+                                        <a href="#">Tất cả công việc</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="note">
+                    <div class="row">
+                        <div class="col s12 m12 l12"> 
+                            <ul id="task-card" class="collection with-header">
+                                <li>
+                                    <div class="congviec"><h5 >Ghi chú</h5></div>
+                                </li>
+                                <li class="collection-item dismissable">
+                                    <label for="task1">Báo cáo bài tập lớn số 2: yêu cầu 30 trang, có phụ lục<a href="#"
+                                                                                 class="secondary-content"><span
+                                            class="ultra-small">Ngày mai</span></a>
+                                    </label>
+                                </li>
+                                <li class="collection-item dismissable">
+                                    <label for="task2">Slide thuyết trình: <15 slide, trình bày trong 20 phút <a href="#"
+                                                                              class="secondary-content"><span
+                                            class="ultra-small">Hôm nay</span></a>
+                                    </label>
+                                </li>
+                                <li class="collection-item dismissable">
+                                    <label for="task3">Ứng dụng lịch và nhắc việc có giao diện cho cả mobile và tablet<a href="#"
+                                                                               class="secondary-content"><span
+                                            class="ultra-small">Hôm qua</span></a>
+                                    </label>
+                                </li>
+                                <li>
+                                    <div class="all-task">
+                                        <i class="mdi-image-navigate-next " id="new-page"></i>
+                                        <a href="#">Tất cả ghi chú</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="grade">
+                    <div class="row">
+                        <div class="col s12 m12 l12">
+                            <div class="table-grade">
+                                <div class="diemso"><h5>Điểm số</h5></div>
+                                <div class="btn-floating btn-move-up waves-effect waves-light darken-2 right">
+                                    <a class="modal-trigger" href="#modal1"><i class="mdi-content-create" style="padding-left: 6px;"></i></a>
                                 </div>
                                 <div id="mail-app" class="section">
-                                    <div id="modal2" class="modal">
+                                    <div id="modal1" class="modal">
                                         <div class="modal-content">
                                             <nav class="#26c6da">
                                                 <div class="nav-wrapper">
                                                     <div class="left col s12 m5 l5">
                                                         <ul>
-                                                            <li><a href="#!" class="email-menu"><i
-                                                                    class="modal-action modal-close mdi-hardware-keyboard-backspace"></i></a>
+                                                            <li><a href="#!" class="email-menu"><i class="modal-action modal-close mdi-hardware-keyboard-backspace"></i></a>
                                                             </li>
-                                                            <li><a href="#!" style="font-size: large">Tạo ghi chú</a>
+                                                            <li><a href="#!" style="font-size: large">Nhập điểm</a>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="col s12 m7 l7">
+                                                    <div class="col s12 m7 l7 hide-on-med-and-down">
                                                         <ul class="right">
-                                                            <li><a href="#!"><i class="mdi-content-save"></i></a>
+                                                            <li><a href="#!"><i class="mdi-content-save" ></i></a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -237,22 +367,27 @@
                                             <div class="row">
                                                 <form class="col s12">
                                                     <div class="row">
-                                                        <div class="input-field col s12" id="option-font">
-                                                            <select>
-                                                                <option value="1">Cơ sở dữ liệu</option>
-                                                                <option value="2">Đường lối Cách mạng Việt Nam</option>
-                                                                <option value="3">Phát triển ứng dụng Web</option>
-                                                                <option value="4">Thiết kế giao diện người dùng</option>
-                                                                <option value="5">Tín hiệu hệ thống</option>
-                                                                <option value="6">Xác suất thống kê</option>
-                                                            </select>
-                                                            <label>Chọn môn</label>
+                                                        <div class="input-field col s12">
+                                                            <input placeholder="0-10" id="diem" type="text">
+                                                            <label>Điểm chuyên cần</label>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="input-field col s12">
-                                                            <textarea id="option-font" class="materialize-textarea"></textarea>
-                                                            <label>Ghi chú</label>
+                                                            <input placeholder="0-10" id="diem" type="text">
+                                                            <label>Bài tập lớn 1</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input placeholder="0-10" id="diem" type="text">
+                                                            <label>Bài tập lớn 2</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <input placeholder="0-10" id="diem" type="text">
+                                                            <label>Điểm cuối kì</label>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -260,180 +395,80 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="striped-table">
+                                    <div class="col s12 m12 l12">
+                                        <table class="striped bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th >Thành phần điểm</th>
+                                                    <th>Trọng số</th>
+                                                    <th>Điểm</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Chuyên cần</td>
+                                                    <td>0.1</td>
+                                                    <td>9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bài tập lớn 1</td>
+                                                    <td>0.2</td>
+                                                    <td>8</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bài tập lớn 2</td>
+                                                    <td>0.2</td>
+                                                    <td>8</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cuối kỳ</td>
+                                                    <td>0.5</td>
+                                                    <td>9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Điểm trung bình</td>
+                                                    <td>8.6</td>
+                                                </tr>
+                                                <tr></tr>
+                                            </tbody>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="time-table">
-                        <div class="col s12 m12 l12">
-                            <ul id="task-card" class="collection date-time">
-                                <li class="collection-item">
-                                    <div class="row">
-                                        <h6>Báo cáo bài tập lớn số 2: yêu cầu 30 trang, có phụ lục</h6>
+                                        </table>
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
+                            <div class="all-task">
+                                            <i class="mdi-image-navigate-next " id="new-page"></i>
+                                            <a href="#"><span>Chi tiết điểm số</span></a>
+                                        </div>
                         </div>
                     </div>
-
                 </div>
+                <div class="journey">
+                    <div class="row">
+                    <div class="journey-info col s12 m12 l12">
+                        <p><b>
+                            Tổng số buổi học cả kỳ: <span class="number-of-classes1"><b> 15</b></span></b>
+                        </p>
+                        <p><b>
+                            Số buổi học đã tham gia: <span class="number-of-classes2"><b> 11</b></span>
+                        </p>
+                        <p><b>
+                            Số buổi học đã nghỉ: <span class="number-of-classes3"><b> 1</b></span></b>
+                        </p>
+                        <p><b>
+                            Số buổi học thiếu do bị hủy/hoãn: <span class="number-of-classes4"><b> 0</b></span></b>
+                        </p>
+                    </div>
+                </div>
+                <!--card widgets end-->
             </div>
-        </section><!-- END CONTENT -->
+            </div>
+            <!--end container-->
+        </section>
+        <!-- END CONTENT -->
 
         <!-- //////////////////////////////////////////////////////////////////////////// -->
-        <!-- START RIGHT SIDEBAR NAV-->
-        <aside id="right-sidebar-nav">
-            <ul id="chat-out" class="side-nav rightside-navigation">
-                <li class="li-hover">
-                    <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i
-                            class="mdi-navigation-close"></i></a>
-                    <div id="right-search" class="row">
-                        <form class="col s12">
-                            <div class="input-field">
-                                <i class="mdi-action-search prefix"></i>
-                                <input id="icon_prefix" type="text" class="validate">
-                                <label for="icon_prefix">Search</label>
-                            </div>
-                        </form>
-                    </div>
-                </li>
-                <li class="li-hover">
-                    <ul class="chat-collapsible" data-collapsible="expandable">
-                        <li>
-                            <div class="collapsible-header teal white-text active"><i class="mdi-social-whatshot"></i>Recent
-                                Activity
-                            </div>
-                            <div class="collapsible-body recent-activity">
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i
-                                            class="mdi-action-add-shopping-cart"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">just now</a>
-                                        <p>Jim Doe Purchased new equipments for zonal office.</p>
-                                    </div>
-                                </div>
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i
-                                            class="mdi-device-airplanemode-on"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">Yesterday</a>
-                                        <p>Your Next flight for USA will be on 15th August 2015.</p>
-                                    </div>
-                                </div>
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i
-                                            class="mdi-action-settings-voice"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">5 Days Ago</a>
-                                        <p>Natalya Parker Send you a voice mail for next conference.</p>
-                                    </div>
-                                </div>
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-store"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">Last Week</a>
-                                        <p>Jessy Jay open a new store at S.G Road.</p>
-                                    </div>
-                                </div>
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i
-                                            class="mdi-action-settings-voice"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">5 Days Ago</a>
-                                        <p>Natalya Parker Send you a voice mail for next conference.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header light-blue white-text active"><i
-                                    class="mdi-editor-attach-money"></i>Sales Repoart
-                            </div>
-                            <div class="collapsible-body sales-repoart">
-                                <div class="sales-repoart-list  chat-out-list row">
-                                    <div class="col s8">Target Salse</div>
-                                    <div class="col s4"><span id="sales-line-1"></span>
-                                    </div>
-                                </div>
-                                <div class="sales-repoart-list chat-out-list row">
-                                    <div class="col s8">Payment Due</div>
-                                    <div class="col s4"><span id="sales-bar-1"></span>
-                                    </div>
-                                </div>
-                                <div class="sales-repoart-list chat-out-list row">
-                                    <div class="col s8">Total Delivery</div>
-                                    <div class="col s4"><span id="sales-line-2"></span>
-                                    </div>
-                                </div>
-                                <div class="sales-repoart-list chat-out-list row">
-                                    <div class="col s8">Total Progress</div>
-                                    <div class="col s4"><span id="sales-bar-2"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Favorite
-                                Associates
-                            </div>
-                            <div class="collapsible-body favorite-associates">
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt=""
-                                                             class="circle responsive-img online-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Eileen Sideways</p>
-                                        <p class="place">Los Angeles, CA</p>
-                                    </div>
-                                </div>
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt=""
-                                                             class="circle responsive-img online-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Zaham Sindil</p>
-                                        <p class="place">San Francisco, CA</p>
-                                    </div>
-                                </div>
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt=""
-                                                             class="circle responsive-img offline-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Renov Leongal</p>
-                                        <p class="place">Cebu City, Philippines</p>
-                                    </div>
-                                </div>
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt=""
-                                                             class="circle responsive-img online-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Weno Carasbong</p>
-                                        <p>Tokyo, Japan</p>
-                                    </div>
-                                </div>
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt=""
-                                                             class="circle responsive-img offline-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Nusja Nawancali</p>
-                                        <p class="place">Bangkok, Thailand</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </aside>
-        <!-- LEFT RIGHT SIDEBAR NAV-->
 
     </div>
     <!-- END WRAPPER -->
