@@ -154,10 +154,9 @@
                     <div class="divider"></div>
                 </li>
                 <li class="li-hover"><p class="ultra-small margin more-text">Studer</p></li>
-                <li><a href="../views/Setting.html"><i class="mdi-action-settings"></i> Cài đặt</a>
+                <li><a href="Setting.html"><i class="mdi-action-settings"></i> Cài đặt</a>
                 </li>
-                <li><a href="dtui-intro.html"><i class="mdi-communication-live-help"></i> Hướng dẫn</a>
-                </li>
+
                 <li><a href="dtui-GopY.html"><i class="mdi-action-speaker-notes"></i> Góp ý</a>
                 </li>
                 <li><a href="dtui-intro.html"><i class="mdi-social-school"></i> Giới thiệu</a>
@@ -184,7 +183,8 @@
                             <ul id="task-card" class="collection with-header">
                                 <li class="collection-header cyan">
                                     <h4 class="task-card-title">Công việc</h4>
-                                    <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
+                                    <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right"
+                                       href="dtui-taonhacnho.html">
                                         <i class="mdi-content-add activator"></i>
                                     </a>
                                 </li>
@@ -226,9 +226,10 @@
                                     <ul id="projects-collection" class="collection">
                                         <li class="collection-item avatar">
                                             <i class="mdi-file-folder circle light-blue darken-2"></i>
-                                            <span class="collection-header">Các môn học</span>
+                                            <a href="dtui-tatcacacmonhoc.html"><span class="collection-header">Các môn học</span></a>
                                             <p>Công việc cần làm</p>
-                                            <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
+                                            <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right"
+                                               href="dtui-taomonhocmoi.html">
                                                 <i class="mdi-content-add activator"></i>
                                             </a>
                                             <!--<a href="#" class="secondary-content"><i class="mdi-action-grade"></i></a>-->
@@ -317,7 +318,9 @@
                                 <div class="card-move-up waves-effect waves-block waves-light">
                                     <div class="move-up cyan darken-1">
                                         <div>
-                                            <span class="chart-title white-text">Thống kê</span>
+                                            <a href="dtui-analysis.html">
+                                                <span class="chart-title white-text">Thống kê</span>
+                                            </a>
                                             <!--<div class="chart-revenue cyan darken-2 white-text">-->
                                             <!--<p class="chart-revenue-total">7/13 tasks</p>-->
                                             <!--</div>-->
@@ -335,8 +338,8 @@
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <a class="btn-floating btn-move-up waves-effect waves-light darken-2 right"><i
-                                            class="mdi-av-equalizer activator"></i></a>
+                                    <!--<a class="btn-floating btn-move-up waves-effect waves-light darken-2 right"><i-->
+                                    <!--class="mdi-av-equalizer activator"></i></a>-->
                                     <div class="col s12 m3 l3">
                                         <div id="doughnut-chart-wrapper">
                                             <canvas id="doughnut-chart" height="200"></canvas>
@@ -362,8 +365,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
 
@@ -371,13 +372,13 @@
                             <div class="card">
                                 <div class="card-move-up teal waves-effect waves-block waves-light">
                                     <div class="move-up">
-                                        <span class="chart-title white-text">Công việc hoàn thành</span>
+                                        <a href="dtui-tasks.html">
+                                            <span class="chart-title white-text">Công việc hoàn thành</span>
+                                        </a>
                                         <canvas id="trending-radar-chart" height="0"></canvas>
                                     </div>
                                 </div>
                                 <div class="card-content  teal darken-2">
-                                    <a class="btn-floating btn-move-up waves-effect waves-light darken-2 right"><i
-                                            class="mdi-av-equalizer activator"></i></a>
                                     <div class="line-chart-wrapper">
                                         <p class="margin white-text"></p>
                                         <canvas id="line-chart" height="114"></canvas>
@@ -397,7 +398,9 @@
                         <div class="col s12 m6 l3">
                             <div class="card">
                                 <div class="card-content  green white-text">
-                                    <p class="card-stats-title"><i class="mdi-social-group-add"></i> Công việc</p>
+                                    <a href="dtui-tasks.html" style="color:white">
+                                        <p class="card-stats-title"><i class="mdi-social-group-add"></i> Công việc</p>
+                                    </a>
                                     <h4 class="card-stats-number">23</h4>
                                     <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 75%
                                         <span class="green-text text-lighten-5">đã hoàn thành</span>
@@ -411,8 +414,11 @@
                         <div class="col s12 m6 l3">
                             <div class="card">
                                 <div class="card-content purple white-text">
-                                    <p class="card-stats-title"><i class="mdi-editor-attach-money"></i>Điểm trung bình
-                                    </p>
+                                    <a href="dtui-quanlydiem.html" style="color:white">
+                                        <p class="card-stats-title"><i class="mdi-editor-attach-money"></i>Điểm trung
+                                            bình
+                                        </p>
+                                    </a>
                                     <h4 class="card-stats-number">3.69</h4>
                                     <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> tăng
                                         70%
@@ -425,25 +431,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m6 l3">
-                            <div class="card">
-                                <div class="card-content blue-grey white-text">
-                                    <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Lời nhắc</p>
-                                    <h4 class="card-stats-number">7</h4>
-                                    <!--<p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 80%-->
-                                    <!--<span class="blue-grey-text text-lighten-5">from yesterday</span>-->
-                                    <!--</p>-->
-                                </div>
-                                <div class="card-action blue-grey darken-2">
-                                    <!--<div id="profit-tristate"></div>-->
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="col s12 m6 l3">
                             <div class="card">
                                 <div class="card-content deep-purple white-text">
-                                    <p class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i> Ghi chú
-                                    </p>
+                                    <a href="dtui-notes.html" style="color:white">
+                                        <p class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i> Ghi chú
+                                        </p>
+                                    </a>
                                     <h4 class="card-stats-number">24</h4>
                                     <p class="card-stats-compare">
                                         <!--<i class="mdi-hardware-keyboard-arrow-down"></i> 3%-->

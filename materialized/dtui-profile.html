@@ -160,10 +160,9 @@
                     <div class="divider"></div>
                 </li>
                 <li class="li-hover"><p class="ultra-small margin more-text">Studer</p></li>
-                <li><a href="../views/Setting.html"><i class="mdi-action-settings"></i> Cài đặt</a>
+                <li><a href="Setting.html"><i class="mdi-action-settings"></i> Cài đặt</a>
                 </li>
-                <li><a href="dtui-intro.html"><i class="mdi-communication-live-help"></i> Hướng dẫn</a>
-                </li>
+
                 <li><a href="dtui-GopY.html"><i class="mdi-action-speaker-notes"></i> Góp ý</a>
                 </li>
                 <li><a href="dtui-intro.html"><i class="mdi-social-school"></i> Giới thiệu</a>
@@ -188,31 +187,71 @@
                     </div>
                     <div class="card-content">
                         <img src="images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
-                        <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
+                        <a href="#modal1"
+                           class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right modal-trigger">
                             <i class="mdi-editor-mode-edit"></i>
                         </a>
-
+                        <div id="mail-app" class="section">
+                            <div id="modal1" class="modal">
+                                <div class="modal-content">
+                                    <nav class="#26c6da">
+                                        <div class="nav-wrapper">
+                                            <div class="left col s12 m5 l5">
+                                                <ul>
+                                                    <li><a href="#!" class="email-menu"><i
+                                                            class="modal-action modal-close mdi-hardware-keyboard-backspace"></i></a>
+                                                    </li>
+                                                    <li><a href="#!" style="font-size: large">Thông tin cá nhân</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col s12 m7 l7">
+                                                <ul class="right">
+                                                    <li><a href="#!"><i class="mdi-content-save"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <div class="model-email-content">
+                                    <div class="row">
+                                        <form class="col s12">
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="password" type="text" class="validate">
+                                                    <label>Họ tên</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <select>
+                                                        <option value="1">Developer</option>
+                                                        <option value="2">Kinh tế</option>
+                                                        <option value="3">Sư phạm</option>
+                                                        <option value="4">Khác</option>
+                                                    </select>
+                                                    <label>Nghề nghiệp</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="email" type="text" class="validate">
+                                                    <label>Email</label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <span class="card-title activator grey-text text-darken-4">Trần Minh Tuấn</span>
                         <p><i class="mdi-action-perm-identity"></i> Developer</p>
                         <p><i class="mdi-action-perm-phone-msg"></i> K59CLC - UET - VNU</p>
                         <p><i class="mdi-communication-email"></i> tuantmtb@gmail.com</p>
 
                     </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Roger Waters <i
-                                class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this card.</p>
-                        <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
-                        <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
-                        <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
-                        <p><i class="mdi-social-cake"></i> 18th June 1990
-                        </p>
-                        <p>
-                        </p>
-                        <p><i class="mdi-device-airplanemode-on"></i> BAR - AUS
-                        </p>
-                        <p>
-                        </p></div>
+
                 </div>
             </div>
             <!--end container-->

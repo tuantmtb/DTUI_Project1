@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Material Design -->
+    <link href="../node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
+
+    <link href="http://fezvrasta.github.io/snackbarjs/dist/snackbar.min.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap-material-design/dist/css/date-time.css" rel="stylesheet">
+
+    <link href="../css/quanlyhocki.css" rel="stylesheet">
+    <link href="../css/taonhacnho2.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <!--START HEADER-->
+    <div class="navBar row">
+        <div class="row" style="margin-right: 0px;">
+            <div class="btn-back"><a href="#"><i class="material-icons">arrow_back</i></a></div>
+            <div class="title"><h3>Tạo nhắc nhở</h3></div>
+            <p class="bs-component btn_luu">
+                <a href="dtui-tasks.html" class="btn btn-default" style="color: white">Lưu</a>
+            </p>
+            <div class="clearfix"></div>
+        </div>
+        <div class="row" style="margin-right: 0px;">
+            <div class="col-xs-11 col-xs-offset-1 subject">
+                <form class="bs-component">
+                    <div class="form-group  label-floating ">
+                        <label class="control-label" for="focusedInput2" style="color:white;">Nhập môn học, thời gian,
+                            địa chỉ</label>
+                        <input class="form-control" id="focusedInput2" style="color:white;" type="text">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--END HEADER-->
+    <!--START BODY-->
+    <div class="row mid2 input-sub">
+        <div class="col-xs-2 content-left"><i class="avatar material-icons">room</i></div>
+        <div class="col-xs-10">
+            <form class="bs-component">
+                <div class="form-group label-floating">
+                    <label class="control-label" for="where">Thêm địa chỉ</label>
+                    <input class="form-control" id="where" type="text">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row mid2 input-sub">
+        <div class="col-xs-2 content-left"><i class="avatar material-icons">people</i></div>
+        <div class="col-xs-10">
+            <form class="bs-component">
+                <div class="form-group label-floating">
+                    <label class="control-label" for="people">Mời mọi người</label>
+                    <input class="form-control" id="people" type="text">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row mid2 input-sub">
+        <div class="row input-sub " style="margin-right: 0px;">
+            <div class="col-xs-2 content-left"><i class="avatar2 material-icons">schedule</i></div>
+            <div class="col-xs-5 title-content">Cả ngày</div>
+            <div class="col-xs-3 right-content">
+                <div class="togglebutton">
+                    <label>
+                        <input type="checkbox" checked="">
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        <div class="row " style="margin-right: 0px;">
+            <div class="content-left col-xs-2"><i class="avatar2 material-icons"></i></div>
+            <div class="col-xs-5 title-content-small">
+                <form class="bs-component">
+                    <div class="form-group date-small">
+                        <input class="form-control" id="date1" type="text" placeholder="Hôm nay">
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-3 right-content-small">
+                <form class="bs-component">
+                    <div class="form-group date-small">
+                        <input class="form-control" id="time1" type="text" placeholder="7 : 00 AM">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row" style="margin-right: 0px;">
+            <div class="content-left col-xs-2"><i class="avatar2 material-icons"></i></div>
+            <div class="col-xs-5 title-content-small">
+                <form class="bs-component">
+                    <div class="form-group date-small">
+                        <input class="form-control" id="date" type="text" placeholder="Hôm nay">
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-3 right-content-small">
+                <form class="bs-component">
+                    <div class="form-group date-small">
+                        <input class="form-control" id="time" type="text" placeholder="7 : 00 AM">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row mid2 input-sub">
+        <div class="col-xs-2 content-left"><i class="avatar material-icons">cached</i></div>
+        <div class="col-xs-10">
+            <button type="button" class="btn" id="laplai" data-toggle="modal" data-target="#complete-dialog">Lặp lại
+                trong 30 phút
+            </button>
+        </div>
+    </div>
+    <div class="row mid2 input-sub">
+        <div class="col-xs-2 content-left"><i class="avatar material-icons">event_note</i></div>
+        <div class="col-xs-10">
+            <form class="bs-component">
+                <div class="form-group label-floating">
+                    <input class="form-control" id="note" type="text" placeholder="Thêm ghi chú">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row mid2 input-sub">
+        <div class="col-xs-2 content-left"><i class="avatar material-icons">library_add</i></div>
+        <div class="col-xs-10">
+            <form class="bs-component">
+                <div class="form-group label-floating">
+                    <input class="form-control" id="dinhkem" type="text" placeholder="Thêm tài liệu đính kèm">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--END BODY-->
+
+</div>
+<div id="complete-dialog" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Thời gian lặp lại</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-9">30 phút trước</div>
+                        <div class="col-xs-2">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="radio" value="min30" checked="checked">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-9">20 phút trước</div>
+                        <div class="col-xs-2">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="radio" value="min20">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-9">10 phút trước</div>
+                        <div class="col-xs-2">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="radio" value="min10">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-9">Tùy chọn ...</div>
+                        <div class="col-xs-2">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="radio" value="custom">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    (function () {
+
+        var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function () {
+            var index = $('.bs-component').index($(this).parent());
+            $.get(window.location.href, function (data) {
+                var html = $(data).find('.bs-component').eq(index).html();
+                html = cleanSource(html);
+                $("#source-modal pre").text(html);
+                $("#source-modal").modal();
+            })
+
+        });
+
+        function cleanSource(html) {
+            var lines = html.split(/\n/);
+            lines.shift();
+            lines.splice(-1, 1);
+            var indentSize = lines[0].length - lines[0].trim().length,
+                re = new RegExp(" {" + indentSize + "}");
+
+            lines = lines.map(function (line) {
+                if (line.match(re)) {
+                    line = line.substring(indentSize);
+                }
+
+                return line;
+            });
+
+            lines = lines.join("\n");
+
+            return lines;
+        }
+
+        $(".icons-material .icon").each(function () {
+            $(this).after("<br><br><code>" + $(this).attr("class").replace("icon ", "") + "</code>");
+        });
+
+    })();
+
+</script>
+<script src="../node_modules/bootstrap-material-design/dist/js/ripples.min.js"></script>
+<script src="../node_modules/bootstrap-material-design/dist/js/material.min.js"></script>
+<script src="http://fezvrasta.github.io/snackbarjs/dist/snackbar.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js"></script>
+<script type="text/javascript" src="http://momentjs.com/downloads/moment-with-locales.min.js"></script>
+<script src="../node_modules/bootstrap-material-design/dist/js/date-time.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#date').bootstrapMaterialDatePicker
+        ({
+            time: false,
+            clearButton: true
+        });
+
+        $('#time').bootstrapMaterialDatePicker
+        ({
+            date: false,
+            shortTime: false,
+            format: 'HH:mm'
+        });
+        $('#date1').bootstrapMaterialDatePicker
+        ({
+            time: false,
+            clearButton: true
+        });
+
+        $('#time1').bootstrapMaterialDatePicker
+        ({
+            date: false,
+            shortTime: false,
+            format: 'HH:mm'
+        });
+
+        $('#date-format').bootstrapMaterialDatePicker
+        ({
+            format: 'dddd DD MMMM YYYY - HH:mm'
+        });
+        $('#date-fr').bootstrapMaterialDatePicker
+        ({
+            format: 'DD/MM/YYYY HH:mm',
+            lang: 'fr',
+            weekStart: 1,
+            cancelText: 'ANNULER',
+            nowButton: true,
+            switchOnClick: true
+        });
+
+        $('#date-end').bootstrapMaterialDatePicker
+        ({
+            weekStart: 0, format: 'DD/MM/YYYY HH:mm'
+        });
+        $('#date-start').bootstrapMaterialDatePicker
+        ({
+            weekStart: 0, format: 'DD/MM/YYYY HH:mm', shortTime: true
+        }).on('change', function (e, date) {
+            $('#date-end').bootstrapMaterialDatePicker('setMinDate', date);
+        });
+
+        $('#min-date').bootstrapMaterialDatePicker({format: 'DD/MM/YYYY HH:mm', minDate: new Date()});
+
+        $.material.init()
+    });
+</script>
+</body>
+</html>

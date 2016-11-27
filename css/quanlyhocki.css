@@ -1,90 +1,107 @@
-.navBar{
-    background: #512DA8;
-    color: white;
-}
-.navBar a{
+.navBar {
+    background: #00bcd4;
     color: white;
 }
 
-.titleBar{
+.navBar a {
+    color: white;
+}
+
+.titleBar {
     margin-top: 60px;
     margin-left: 10px;
 }
-.mid{
+
+.mid {
     background: white;
     padding-top: 20px;
     margin-bottom: 10px;
 }
-.btn-back{
+
+.btn-back {
     float: left;
     padding: 10px;
     font-size: 30px;
     color: white;
 }
-.rightBar{
+
+.rightBar {
     float: right;
     padding: 10px;
     font-size: 30px;
 }
-.title{
+
+.title {
     float: left;
     width: auto;
     margin-top: -3px;
     padding-left: 10px;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     top: 40px;
     left: -120px;
 }
-.clear{
+
+.clear {
     clear: both;
 }
+
 /*END HEADER*/
 
-.content-left .room{
+.content-left .room {
     margin-left: 15px;
     color: red;
     font-size: 36px;
 }
-.content-left .schedule{
+
+.content-left .schedule {
     margin-left: 15px;
     color: black;
     font-size: 36px;
 }
-.content-right > p{
+
+.content-right > p {
     padding-top: 7px;
 }
-.subjects{
+
+.subjects {
     margin-top: 5px;
     background: white;
     padding-bottom: 20px;
     padding-top: 10px;
 }
-p{
+
+p {
     font-size: 1.1em;
 }
-.col-xs-9>p{
+
+.col-xs-9 > p {
     padding-top: 5px;
     height: 15px;
 }
-.smallDes{
+
+.smallDes {
     font-size: 0.8em
 }
-.hr{
+
+.hr {
     border-bottom: solid rgba(18, 63, 105, 0.37) 1px;
     margin-left: 35px;
 }
-.item-listview i{
+
+.item-listview i {
     font-size: 32px;
     margin-left: 15px;
     margin-top: 5px;
     padding-bottom: 10px;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-.btn{
+
+.btn {
     text-transform: none;
 }
