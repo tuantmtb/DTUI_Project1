@@ -1,42 +1,52 @@
-.head{
-	height:auto;
+.head {
+    height: auto;
 }
-.setting{
-	padding:15px;
+
+.setting {
+    padding: 15px;
 }
-.setting-title{
-	margin-left: 10px;
+
+.setting-title {
+    margin-left: 10px;
 }
-body{
-	background-color: white;
+
+body {
+    background-color: white;
 }
+
 .set {
-	height: auto;
-	padding-left:15px;
-	padding-right: 10px;
-	border-bottom: 1px solid #ebebe0;
-	color: black;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: white;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 10px;
+    border-bottom: 1px solid #ebebe0;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
 }
-.set a{
-	color: black;
-	text-decoration: none;
+
+.set a {
+    color: black;
+    text-decoration: none;
 }
-.set a:hover{
-	text-decoration: none;
-	color: blue;
+
+.set a:hover {
+    text-decoration: none;
+    color: #00bcd4;
 }
-.drop-list a{
-	color: #1006c3;
+
+.drop-list a {
+    color: #00bcd4;
 }
-.drop-list{
-	float: right;
+
+.drop-list {
+    float: right;
 }
-.check-box{
-	float: right;
+
+.check-box {
+    float: right;
 }
-.title-setting{
-	padding-left: 10px;
+
+.title-setting {
+    padding-left: 10px;
 }
