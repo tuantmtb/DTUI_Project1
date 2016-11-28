@@ -54,4 +54,8 @@
   .mdi-content-save:before{
 	  padding-top:0;
   }
- }
+}
+
+#task-card .task-cat {
+	margin-left: 0;
+}
